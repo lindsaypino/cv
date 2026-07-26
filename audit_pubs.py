@@ -55,6 +55,9 @@ EXCLUDE = {
     "10.1016/j.bpj.2021.11.1145":
         "Biophysical Society meeting abstract; OpenAlex mistypes it as an "
         "article.",
+    "10.1016/j.euprot.2019.07.009":
+        "Team COUNCIL OF RICKS / EuPA YPIC 2017 submission. Left off the CV on "
+        "purpose (2026-07-26); the 2018 YPIC Challenge paper is listed instead.",
     "10.1101/345686":
         "bioRxiv preprint of the 2020 Cell Reports paper "
         "(10.1016/j.celrep.2020.01.096). MyPublications' fuzzy dedupe misses "

@@ -25,8 +25,10 @@ Set-Location -LiteralPath $PSScriptRoot
 $docs = @('pino_cv', 'pino_cv-short', 'pino_resume')
 $auxExt = @('aux', 'log', 'out', 'bbl', 'blg', 'toc', 'fls', 'fdb_latexmk')
 
-# Build date, stamped into each output filename (pino_cv_YYYYMMDD.pdf) so a PDF
-# carries its own vintage once it has been emailed or uploaded somewhere.
+# Each document builds twice over: the undated name (pino_cv.pdf) is the copy
+# that gets committed and linked, so the download URL never changes, and a dated
+# duplicate (pino_cv_YYYYMMDD.pdf) sits beside it so a PDF carries its own
+# vintage once it has been emailed somewhere.
 $stamp = Get-Date -Format 'yyyyMMdd'
 
 if ($Clean) {
@@ -71,11 +73,11 @@ foreach ($d in $docs) {
             Where-Object { $_.Line -notmatch 'Font shape|\(Font\)' }
         $suffix = if ($warn) { "$($warn.Count) warning(s)" } else { 'clean' }
 
-        # pdflatex names its output after the .tex file; rename to the dated form.
+        # pdflatex names its output after the .tex file. Keep that undated name
+        # as the linkable copy and duplicate it to the dated form.
         $dated = "${d}_$stamp.pdf"
-        if (Test-Path $dated) { Remove-Item $dated -Force }
-        Move-Item -LiteralPath "$d.pdf" -Destination $dated
-        "built $dated - $suffix"
+        Copy-Item -LiteralPath "$d.pdf" -Destination $dated -Force
+        "built $d.pdf + $dated - $suffix"
     }
 }
 

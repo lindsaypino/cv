@@ -4,13 +4,14 @@ LaTeX sources for Lindsay K. Pino's CV, short CV, and resume.
 
 | Source | Output | Purpose |
 | --- | --- | --- |
-| `pino_cv.tex` | `pino_cv_YYYYMMDD.pdf` | Full CV — all publications, talks, posters, service, teaching |
-| `pino_cv-short.tex` | `pino_cv-short_YYYYMMDD.pdf` | Condensed CV — selected publications and talks |
-| `pino_resume.tex` | `pino_resume_YYYYMMDD.pdf` | Industry resume — employment first, heavily trimmed |
+| `pino_cv.tex` | `pino_cv.pdf` | Full CV — all publications, talks, posters, service, teaching |
+| `pino_cv-short.tex` | `pino_cv-short.pdf` | Condensed CV — selected publications and talks |
+| `pino_resume.tex` | `pino_resume.pdf` | Industry resume — employment first, heavily trimmed |
 
-Outputs are stamped with the build date, so a PDF still shows its vintage after
-it has been emailed or uploaded. The date in the filename always matches the
-"Updated" line inside the document.
+Every build also drops a dated duplicate beside each output —
+`pino_cv_YYYYMMDD.pdf` — so a PDF still shows its vintage after it has been
+emailed. The date in the filename always matches the "Updated" line inside the
+document. The undated copy is the one that gets committed and linked.
 
 All three share a single preamble in `cvstyle.sty`, which defines the page
 layout, fonts, colors, the `\mysection`/`\mysubsection` headings, the `V`
@@ -42,8 +43,8 @@ lists settle):
 .\build.ps1 -Clean
 ```
 
-A single document, if you prefer to drive it by hand — note this leaves the
-undated `pino_cv.pdf`; only `build.ps1` and `make` apply the date stamp:
+A single document, if you prefer to drive it by hand — note this produces only
+the undated PDF; the dated duplicate comes from `build.ps1` or `make`:
 
 ```powershell
 texify --pdf pino_cv.tex
@@ -53,21 +54,32 @@ The `makefile` does the same thing on Linux or macOS via `make`.
 
 ## The published PDF
 
-Dated builds of the full CV are committed as the published record, e.g.
-`pino_cv_20260726.pdf`. The short CV and resume are gitignored; add a negation to
-`.gitignore` if you want to publish those too.
+The undated full CV is committed as the published record, so the download URL is
+permanent:
 
-Because the filename changes with each build, there is no fixed download URL —
-link to the newest file, or to the repository itself. If you would rather have a
-permanent link, commit an undated copy alongside the dated one and point at that.
+```
+https://github.com/lindsaypino/cv/raw/master/pino_cv.pdf
+```
+
+That is what <https://lindsaykpino.com> links to. Rebuild, commit `pino_cv.pdf`,
+and the site serves the new version without the menu ever being touched. The
+short CV and resume are gitignored; add a negation to `.gitignore` if you want to
+publish those too.
+
+Dated duplicates are deliberately *not* committed — they exist so an emailed PDF
+carries its vintage, and committing them would mean a new file in the repository
+on every build.
 
 Two things worth knowing when committing PDFs:
 
 - pdfTeX stamps every PDF with a creation timestamp and a random ID, so a rebuild
   produces different bytes even when no source changed. Commit the regenerated
-  PDF when you are actually publishing; otherwise delete it.
+  PDF when you are actually publishing; otherwise check it out again.
+- `raw.githubusercontent.com` serves PDFs as `application/octet-stream`, so the
+  link downloads rather than opening in the browser. Enabling GitHub Pages on this
+  repository would serve `application/pdf` and open it inline instead.
 - Old dated PDFs are not removed automatically. `.\build.ps1 -Clean` clears them
-  locally; `git rm` the ones you no longer want published.
+  locally.
 
 ## Auditing the publication list
 

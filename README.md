@@ -42,8 +42,20 @@ texify --pdf pino_cv.tex
 
 The `makefile` does the same thing on Linux or macOS via `make`.
 
-Generated PDFs and LaTeX aux files are gitignored. To publish a built PDF
-anyway, add it explicitly with `git add -f pino_cv.pdf`.
+## The published PDF
+
+`pino_cv.pdf` is committed so it can be linked to directly:
+
+<https://github.com/lindsaypino/cv/raw/master/pino_cv.pdf>
+
+Everything else the build produces is gitignored. Note that pdfTeX stamps each
+PDF with a creation timestamp and a random ID, so *any* rebuild shows up as a
+modified file even when nothing in the source changed — commit the regenerated
+PDF when you actually publish an update, and `git checkout -- pino_cv.pdf` to
+discard it otherwise.
+
+The header date comes from `\today`, i.e. the date you last built, so rebuild
+before committing a real update.
 
 ## Credit
 

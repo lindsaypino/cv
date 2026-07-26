@@ -1,0 +1,314 @@
+\documentclass[11pt]{article}
+\documentclass[11pt]{article}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+%\usepackage{tabularx}
+%\usepackage{tablestyles}
+\usepackage[hidelinks=true]{hyperref}
+
+% Reverse Numbering
+\usepackage{etaremune}
+
+% Set 1-inch margins.
+\usepackage[margin=1in]{geometry}
+
+% Headers and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textrm{\textbf{Lindsay K.\ Pino}}}
+\lhead{\textrm{\textbf{Curriculum Vitae}}}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \rfoot{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Use Roboto font
+\usepackage[rm]{roboto}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Skip a line between paragraphs.
+\setlength{\parskip}{1.5ex}
+
+% Turn off indenting.
+\setlength{\parindent}{0in}
+
+% Define the section command.
+\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
+    \hrulefill}}
+\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
+
+% Set the numbering style.
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+% Make the \footnote command print symbols (*, etc).
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% Smarter version of href.
+\newcommand{\myref}[1]{\href{#1}{\url{#1}}}
+
+% Table sizes
+\newlength{\leftcol}
+\setlength{\leftcol}{0.6in}
+\newlength{\rightcol}
+\setlength{\rightcol}{5.25in minus \leftcol}
+\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
+\renewcommand{\arraystretch}{1.25} % make rows taller
+
+% No hyphenation
+\pretolerance=10000
+\raggedright
+
+% colors
+\definecolor{gray}{HTML}{404040}
+\color{gray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\bf \Large \textrm{Lindsay K Pino, PhD}}
+  
+  lindsay.pino@gmail.com \\
+  % {phone #}\\
+  \href{https://lindsaykpino.com/}{lindsaykpino.com}\\
+  Updated \today.
+\end{center}
+
+
+\mysection{Education}
+\begin{tabular}{\tdim}
+  % 9/2014--09/2019
+  2014--19 & {\bf PhD in Genome Sciences}
+             \newline University of Washington, Seattle
+             \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
+  % 9/2005--05/2009
+  2005-09 & {\bf BS in Biochemistry and Molecular Biology}
+             \newline Pennsylvania State University
+             \newline Minor: Microbiology\\
+\end{tabular}
+
+\mysection{Employment and Professional Appointments}
+
+\begin{tabular}{\tdim}
+  2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
+  2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
+             \newline Advisor: Benjamin A Garcia, PhD\\
+  2014--19 & {\bf Graduate Research Assistant}, University of Washington,
+             Seattle
+             \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
+  2011--14 & {\bf Research Associate I}, Broad Institute of MIT and Harvard
+             \newline 2012-14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
+             \newline 2011-12 Genomics Platform: Kristin Ardlie, PhD\\
+ % 2006-09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
+             %\newline Advisors: Emine Koc, PhD and Melissa Rolls, PhD\\
+\end{tabular}
+
+\mysection{Awards and Honors}
+\begin{tabular}{\tdim}
+  2025     & {\bf Life Science Entrepreneurial Achievement Award}, Life Science Washington Institute  (LSWI) \\
+  2024     & {\bf Rising Star Award}, Human Proteome Organization (HUPO) \\
+  2021     & {\bf Rising Stars in Proteomics and Metabolomics: 40 under 40}, Journal of Proteome Research (JPR) \\
+  2021     & {\bf Rising Stars in Analytical Chemistry}, Analytical Chemistry Diversity Colloquium \\
+  2020     & {\bf Postdoctoral Career Development Award},  American Society for Mass Spectrometry\\ 
+  2020-21   & {\bf NIH NCI T32 Training Program in Immunobiology of Normal and Neoplastic Lymphocytes}, 
+            \newline NIH T32CA009140, Postdoctoral Trainee\\
+  2017     & {\bf Graduate Research Award}, American Society for Mass Spectrometry\\
+  2016--19 & {\bf Ruth L Kirschstein Individual National Research Service Award}
+             \newline NIH F31AG055257, PI\\
+             % \newline \textit{Impact Score: 25 (16\%)}\\
+%  2016     & {\bf NIH NIA T32 Genetic Approaches to Aging} \textit{declined}\\
+%  2016     & {\bf NSF Graduate Research Fellowship Program} \textit{Honorable Mention}\\
+  2014--16 & {\bf NIH NHGRI T32 Interdisciplinary Training in Genome Sciences}
+             \newline NIH T32HG000035, Predoctoral Trainee\\
+ % 2011     & {\bf US Student Fulbright Critical Language Enhancement Award}, South Korea\\
+  2009-11  & {\bf US Fulbright Scholarship}, South Korea\\ 
+\end{tabular}
+
+\mysection{Research Support}
+\begin{tabular}{\tdim}
+  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+  (Pino/Federation), Role: Principle Investigator}
+             \newline \textit{\$298,973}. Awarded for “Discovery of targeted small 
+             molecule MYCN therapeutics for neuroblastoma" \\
+  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+  (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$1,995,337}. Awarded for “Therapeutic disruption of the 
+             Rhabdomyosarcoma transcriptional core regulatory circuit" \\
+  2023-25 & {NIH/NCI, 4R44CA268146-02 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$1,000,000/year}. Awarded for “Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase II)" \\
+  2022-23 & {NIH/NCI, 1R42CA268146-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$455,000}. Awarded for “Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase I)" \\
+  2022-23 & {NIH/NCATS, 1R43TR004221-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$333,867}. Awarded for “Illuminating the "dark" kinases - effects 
+             on proteome translocation and chromatin binding" \\
+  2021-22 & {NSF, 2112191 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$255,831}. Awarded for “SBIR Phase I: Simultaneous In situ 
+             Pharmacological Profiling of Gene Regulatory Proteins (GRPs) for Cancer Therapy" \\
+
+
+\end{tabular}
+
+%\newpage
+
+\mysection{Selected Peer-Reviewed Publications}
+%{\small (X total, Y first author, Z corresponding author}
+{\small (20 total, 8 first author)}
+
+\begin{etaremune}
+
+    \item Sachsenberg T, \textbf{Pino LK}, Brunet M, Bludau I, Kohlbacher O, Vizcaino JA, Bittremieux W. (2025) Perspectives in computational mass spectrometry: recent developments and key challenges. \textit{Bioinformatics Advances}. https://doi.org/10.1093/bioadv/vbaf301.
+
+    \item Gilbert MB, Glastad KM, Fioriti M, Sorek M, Scarpa T, Purnell FS, Xu D, \textbf{Pino LK}, Korotkov A, Biashad A, Baeza J, Lauman R, Filippova A, Kacsoh BZ, Bonasio R, Mathis MW, Garcia BA, Seluanov A, Gorbunova V, Berger SL. (2025) Neuropeptides specify and reprogram division of labor in the leafcutter ant Atta cephalotes. \textit{Cell}. https://doi.org/10.1016/j.cell.2025.05.023.
+    
+    \item Martinez TF, Lyons-Abbott S, Bookout AL, De Souza EV, Donaldson C, Vaughan 
+    JM, Lau C, Abramov A, Baquero AF, Baquero K, Friedrich D, Huard J, Davis R, Kim B, 
+    Koch T, Mercer AJ, Misquith A, Murray SA, Perry S, \textbf{Pino LK}, Sanford C, 
+    Simon A, Zhang Y, Zipp G, Bizarro CV, Shokhirev MN, Whittle AJ, Searle BC, MacCoss 
+    MJ, Saghatelian A, Barnes CA. (2023) Profiling mouse brown and white adipocytes to 
+    identify metabolically relevant small ORFs and functional microproteins. \textit{Cell 
+    Metab}. https://doi.org/10.1016/j.cmet.2022.12.004
+
+    \item \textbf{Pino LK}, Baeza J, Lauman R, Schilling B, Garcia BA. (2021) Improved 
+    SILAC quantification with data independent acquisition to investigate 
+    bortezomib-induced protein degradation. \textit{J Proteome Res}. 
+    https://doi.org/10.1021/acs.jproteome.0c00938
+    
+    \item Chiao YA, Zhang H, Mariya Sweetwyne M, Jeremy Whitson J, Ting YS, Nathan Basisty
+    N, \textbf{Pino LK}, Ellen Quarles E, Nguyen NH, Campbell MD, Zhang T, Gaffrey MJ, 
+    Merrihew G, Wang L, Yue Y, Duan D, Granzier HL, Szeto HH, Qian WJ, Marcinek D, MacCoss 
+    MJ, Rabinovitch P. (2020) Late-life restoration of mitochondrial function reverses 
+    cardiac dysfunction in old mice. \textit{eLife} https://doi.org/10.7554/eLife.55513
+    
+    \item \textbf{Pino LK}, Just S, MacCoss MJ, Searle BC. (2020) Acquiring and analyzing 
+    data independent acquisition proteomics experiments without spectrum libraries. 
+    \textit{Mol Cell Proteomics} https://doi.org/10.1074/mcp.P119.001913
+    
+    \item Federation AJ, Nandakumar V, Searle BC, Stergachis A, Wang H, \textbf{Pino LK}, 
+    Merrihew G, Ting YS, Howard N, Kutyavin T, MacCoss MJ, Stamatoyannopoulos JA. (2020) 
+    Highly parallel quantification and compartment localization of transcription factors 
+    and nuclear proteins. \textit{Cell Reports} 
+    https://doi.org/10.1016/j.celrep.2020.01.096
+    
+    \item \textbf{Pino LK}, Searle BC, Yang HY, Hoofnagle AN, Noble WS, MacCoss MJ. 
+    (2020) Matrix-matched calibration curves for assessing analytical figures of merit 
+    in quantitative proteomics. \textit{J Proteome Res} 
+    https://doi.org/10.1021/acs.jproteome.9b00666
+    
+    \item Searle BC, \textbf{Pino LK}, Egertson JD, Ting YS, Lawrence RL, MacLean BX, 
+    Villen J, MacCoss MJ. (2018) Chromatogram libraries improve peptide detection and 
+    quantification by data independent acquisition mass spectrometry. \textit{Nat Comm} 
+    Dec 2018. https://doi.org/10.1038/s41467-018-07454-w
+    
+    \item \textbf{Pino LK}, Searle BC, Huang E, Noble WS, Hoofnagle AN, MacCoss MJ. 
+    (2018) Calibration using a single-point external reference material harmonizes 
+    quantitative mass spectrometry proteomics data between platforms and laboratories. 
+    \textit{Anal Chem} https://doi.org/10.1021/acs.analchem.8b04581
+    
+    \item \textbf{Pino LK}, Searle BC, Bollinger JG, Nunn B, MacLean BX, MacCoss MJ. 
+    (2017) The Skyline Ecosystem: Informatics for Quantitative Mass Spectrometry 
+    Proteomics. \textit{Mass Spectrom Rev} https://doi.org/10.1002/mas.21540
+    
+\end{etaremune}
+
+\mysection{Preprints}
+\begin{etaremune}
+
+    \item \textbf{Pino LK*}, Canzani D, Gutierrez A, Robbins J, McEllin B, Hubbard E, Broderick E, Prymolenna A, Tatka L, Paez JS, Mercenne G, Siebenthall K, Fondrie WE, Federation AJ*. \textit{[*co-corresponding]} (2025) Native, Spatiotemporal Profiling of the Global Human Regulome. \textit{bioRxiv}. https://doi.org/10.1101/2025.06.14.659727.
+
+\end{etaremune}
+
+
+\mysection{Selected Invited Research Lectures}
+\begin{etaremune}
+
+    \item \textbf{Pino LK}. Small-molecule modulation of chromatin-associated protein function in native cells. (Jan 2026) \textit{University of Washington Department of Chemistry}, Seattle, WA.
+
+    \item \textbf{Pino LK}. Profiling the regulome with high-throughput proteomics to enable small-molecule therapeutics. (Dec 2025) \textit{Northwestern University Department of Biochemistry and Molecular Genetics}, Chicago, IL.
+
+    \item \textbf{Pino LK}. Spatiotemporal Dynamics of the Transcriptional Regulome Across Cell State and Drug Response Landscapes. (Nov 2025) \textit{24th Human Proteome Organization World Congress}, Toronto, Canada.
+
+    \item \textbf{Pino LK}. Integrating AI throughout a Mass Spectrometry-driven Drug Discovery Approach. (Oct 2024) \textit{23rd Human Proteome Organization World Congress}, Dresden, Germany.
+
+    \item \textbf{Pino LK}. Developing and optimizing mass spectrometry methods to improve detection of covalently modified peptides in complex lysates. (Jun 2024) \textit{American Society for Mass Spectrometry 2024 Annual Conference}, Anaheim, CA.
+
+    \item \textbf{Pino LK}. Embracing Disruption and New Opportunities in the Evolution of Proteomics Technologies. (Apr 2024) \textit{Association of Biomolecular Resource Facilities}, Minneapolis, MN.
+
+    \item \textbf{Pino LK}. From Lab to Launch: Navigating the Entrepreneurial Path in Start-up Biotech. (Mar 2024) \textit{Ohio State University Biochemistry Department}, virtual.
+
+    \item \textbf{Pino LK}. Transcription Factor Profiling by Mass Spectrometry to Discover and Develop Cancer Therapeutics. (Mar 2024) \textit{US HUPO Parallel Session 14: Transcription Factors}, Portland, OR.
+
+    \item \textbf{Pino LK}. Mass Spectrometry-Based Approaches for Chemoproteomics and 
+    Activity-Based Protein Profiling. (Jan 2024) \textit{Annual BCPM Network Symposium},
+    Simon Fraser University, Canada.
+
+    \item \textbf{Pino LK}. Profiling the DNA Regulome to Discover Direct Inhibitors of 
+    the Brachyury Transcription Factor. (Nov 2023) \textit{Ohio State University 
+    Biochemistry Seminar}, Columbus OH.
+
+    
+\end{etaremune}
+
+%\newpage
+
+%\mysection{Mentoring}
+%\begin{tabular}{\tdim}
+%  \raggedright
+%  2020     & {\bf Adetola Alonge}, undergraduate, University of Florida
+%            \newline Project: Metaanalysis of Patient Cerebrospinal Fluid by Mass Spectrometry Proteomics Discovers Known and Novel Biomarkers of Parkinson's Disease
+%            \newline \textit{ePoster Award for Biochemistry and Molecular Biology, Annual Biomedical Research Conference for Minority Students (ABRCMS) (Nov 2020)} \\
+%  2020--22     & {\bf Gabriela Witek}, PhD student, University of Pennsylvania
+%            \newline Thesis: Proteomics of ALK mutation in neuroblastoma\\
+%  2019--24     & {\bf Michael Gilbert}, PhD student, University of Pennsylvania
+%            \newline Thesis: Investigating Caste Differences in \textit{Atta cephalotes}\\
+%  2025     & {\bf Nina Shetty}, undergraduate, University of Washington
+%            \newline Buerk Center’s Women’s Entrepreneurial Leadership program (WE Lead)\\
+%  2025--26     & {\bf Devon Kohler}, undergraduate, Northeastern University
+%            \newline Thesis: Statistical and causal inference methods improve accuracy and interpretability in biomolecular experiments\\
+
+
+  
+%\end{tabular}
+
+% \newpage
+\mysection{Entrepreneurship}
+
+\mysubsection{Accelerator Programs}
+\begin{tabular}{\tdim}
+  2025 & \textit{Founder To Leader}. Femme Fellowship. \\
+  2022 & \textit{Creative Destruction Laboratories (CDL)}. Computational Health (Seattle) graduate. \\
+  2022 & \textit{Project W}. Women Entrepreneurs Boot Camp. \\
+  2021 & \textit{Y Combinator (YC), S21 Batch}. Group partners: Surbhi Sarna, Jared Friedman, Brad Flora. \\
+  2020--24 & \textit{Life Sciences Washington Institute}. Washington Innovation Network (WIN) graduate.\\
+\end{tabular}
+
+
+%\newpage
+
+
+%\newpage
+
+%\mysection{References}
+%{\bf William Noble} \\
+%Department of Genome Sciences, University of Washington\\
+%wnoble@uw.edu
+
+%{\bf Michael MacCoss} \\
+%Department of Genome Sciences, University of Washington\\
+%maccoss@uw.edu
+
+%{\bf Susan Abbatiello} \\
+%Interim Director of the Barnett Institute, Northeastern University\\
+%su.abbatiello@northeastern.edu
+
+%\newpage
+
+\end{document}
+  

@@ -1,2 +1,2 @@
 # cv
-The source for my CV and Biosketch
+Shamelessly forked from Will Fondrie, https://github.com/wfondrie/cv

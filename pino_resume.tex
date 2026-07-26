@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+%\usepackage{tabularx}
+%\usepackage{tablestyles}
+\usepackage[hidelinks=true]{hyperref}
+
+% Reverse Numbering
+\usepackage{etaremune}
+
+% Set 1-inch margins.
+\usepackage[margin=1in]{geometry}
+
+% Headers and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textrm{\textbf{Lindsay K.\ Pino}}}
+\lhead{\textrm{\textbf{Curriculum Vitae}}}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \rfoot{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Use Roboto font
+\usepackage[rm]{roboto}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Skip a line between paragraphs.
+\setlength{\parskip}{1.5ex}
+
+% Turn off indenting.
+\setlength{\parindent}{0in}
+
+% Define the section command.
+\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
+    \hrulefill}}
+\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
+
+% Set the numbering style.
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+% Make the \footnote command print symbols (*, etc).
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% Smarter version of href.
+\newcommand{\myref}[1]{\href{#1}{\url{#1}}}
+
+% Table sizes
+\newlength{\leftcol}
+\setlength{\leftcol}{0.6in}
+\newlength{\rightcol}
+\setlength{\rightcol}{5.25in minus \leftcol}
+\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
+\renewcommand{\arraystretch}{1.25} % make rows taller
+
+% No hyphenation
+\pretolerance=10000
+\raggedright
+
+% colors
+\definecolor{gray}{HTML}{404040}
+\color{gray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\bf \Large \textrm{Lindsay K Pino, PhD}}
+  
+  lindsay.pino@gmail.com \\
+  % {phone #}\\
+  \href{https://lindsaykpino.com/}{lindsaykpino.com}\\
+  Updated \today.
+\end{center}
+
+
+\mysection{Employment and Professional Appointments}
+
+\begin{tabular}{\tdim}
+  2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
+  2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
+             \newline Advisor: Benjamin A Garcia, PhD\\
+  2014--19 & {\bf Graduate Research Assistant}, University of Washington,
+             Seattle
+             \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
+  2011--14 & {\bf Research Associate I}, Broad Institute of MIT and Harvard
+             \newline 2012-14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
+             \newline 2011-12 Genomics Platform: Kristin Ardlie, PhD\\
+ % 2006-09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
+             %\newline Advisors: Emine Koc, PhD and Melissa Rolls, PhD\\
+\end{tabular}
+
+\mysection{Education}
+\begin{tabular}{\tdim}
+  % 9/2014--09/2019
+  2014--19 & {\bf PhD in Genome Sciences}
+             \newline University of Washington, Seattle
+             \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
+\end{tabular}
+
+\mysection{Awards and Honors}
+\begin{tabular}{\tdim}
+  2025     & {\bf Life Science Entrepreneurial Achievement Award}, Life Science Washington Institute  (LSWI) \\
+  2024     & {\bf Rising Star Award}, Human Proteome Organization (HUPO) \\
+  2021     & {\bf Rising Stars in Proteomics and Metabolomics: 40 under 40}, Journal of Proteome Research (JPR) \\
+  2021     & {\bf Rising Stars in Analytical Chemistry}, Analytical Chemistry Diversity Colloquium \\
+\end{tabular}
+
+%\newpage
+
+\mysection{Peer-Reviewed Publications}
+%{\small (X total, Y first author, Z corresponding author}
+{\small (20 total, 8 first author; selection below)}
+
+\begin{etaremune}
+
+    \item Sachsenberg T, \textbf{Pino LK}, Brunet M, Bludau I, Kohlbacher O, Vizcaino JA, Bittremieux W. (2025) Perspectives in computational mass spectrometry: recent developments and key challenges. \textit{Bioinformatics Advances}. https://doi.org/10.1093/bioadv/vbaf301.
+
+    \item \textbf{Pino LK}, Baeza J, Lauman R, Schilling B, Garcia BA. (2021) Improved 
+    SILAC quantification with data independent acquisition to investigate 
+    bortezomib-induced protein degradation. \textit{J Proteome Res}. 
+    https://doi.org/10.1021/acs.jproteome.0c00938
+    
+    \item \textbf{Pino LK}, Just S, MacCoss MJ, Searle BC. (2020) Acquiring and analyzing 
+    data independent acquisition proteomics experiments without spectrum libraries. 
+    \textit{Mol Cell Proteomics} https://doi.org/10.1074/mcp.P119.001913
+    
+    \item \textbf{Pino LK}, Searle BC, Yang HY, Hoofnagle AN, Noble WS, MacCoss MJ. 
+    (2020) Matrix-matched calibration curves for assessing analytical figures of merit 
+    in quantitative proteomics. \textit{J Proteome Res} 
+    https://doi.org/10.1021/acs.jproteome.9b00666
+    
+    \item \textbf{Pino LK}, Searle BC, Huang E, Noble WS, Hoofnagle AN, MacCoss MJ. 
+    (2018) Calibration using a single-point external reference material harmonizes 
+    quantitative mass spectrometry proteomics data between platforms and laboratories. 
+    \textit{Anal Chem} https://doi.org/10.1021/acs.analchem.8b04581
+    
+    \item \textbf{Pino LK}, Searle BC, Bollinger JG, Nunn B, MacLean BX, MacCoss MJ. 
+    (2017) The Skyline Ecosystem: Informatics for Quantitative Mass Spectrometry 
+    Proteomics. \textit{Mass Spectrom Rev} https://doi.org/10.1002/mas.21540
+
+    
+\end{etaremune}
+
+\mysection{Preprints}
+\begin{etaremune}
+
+    \item \textbf{Pino LK*}, Canzani D, Gutierrez A, Robbins J, McEllin B, Hubbard E, Broderick E, Prymolenna A, Tatka L, Paez JS, Mercenne G, Siebenthall K, Fondrie WE, Federation AJ*. \textit{[*co-corresponding]} (2025) Native, Spatiotemporal Profiling of the Global Human Regulome. \textit{bioRxiv}. https://doi.org/10.1101/2025.06.14.659727.
+
+\end{etaremune}
+
+
+\mysection{Selected Invited Research Lectures}
+\begin{etaremune}
+
+    \item \textbf{Pino LK}. Small-molecule modulation of chromatin-associated protein function in native cells. (Jan 2026) \textit{University of Washington Department of Chemistry}, Seattle, WA.
+
+    \item \textbf{Pino LK}. Profiling the regulome with high-throughput proteomics to enable small-molecule therapeutics. (Dec 2025) \textit{Northwestern University Department of Biochemistry and Molecular Genetics}, Chicago, IL.
+
+    \item \textbf{Pino LK}. Integrating AI throughout a Mass Spectrometry-driven Drug Discovery Approach. (Oct 2024) \textit{23rd Human Proteome Organization World Congress}, Dresden, Germany.
+
+    \item \textbf{Pino LK}. Developing and optimizing mass spectrometry methods to improve detection of covalently modified peptides in complex lysates. (Jun 2024) \textit{American Society for Mass Spectrometry 2024 Annual Conference}, Anaheim, CA.
+
+
+    
+\end{etaremune}
+
+
+% \newpage
+\mysection{Professional Service}
+
+\mysubsection{Editorial Boards}
+\begin{tabular}{\tdim}
+  2021--23 & \textit{Journal of Proteome Research}. Editorial Advisory Board. \\
+  2021 & \textit{Molecular Omics}. Guest editor, special issue titled "Cross-talk and Integrative Post-translational Modifications". \\
+\end{tabular}
+
+{\bf Journal Referee: }{Nature Communications, Molecular \& Cellular Proteomics, Journal of Proteome Research, Analytical Chemistry, Scientific Reports, Proteomics, Frontiers in Molecular Neuroscience, Journal of the American Society for Mass Spectrometry, Clinical Proteomics}\\ 
+
+
+%\newpage
+
+
+
+\end{document}
+  

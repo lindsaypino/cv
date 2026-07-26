@@ -54,30 +54,37 @@ The `makefile` does the same thing on Linux or macOS via `make`.
 
 ## The published PDF
 
-The undated full CV is committed as the published record, so the download URL is
-permanent:
+The undated full CV is committed as the published record, and GitHub Pages serves
+it, so the URL is both permanent and opens in the browser:
 
 ```
-https://github.com/lindsaypino/cv/raw/master/pino_cv.pdf
+https://lindsaypino.github.io/cv/pino_cv.pdf
 ```
 
 That is what <https://lindsaykpino.com> links to. Rebuild, commit `pino_cv.pdf`,
-and the site serves the new version without the menu ever being touched. The
-short CV and resume are gitignored; add a negation to `.gitignore` if you want to
-publish those too.
+and the site serves the new version without the menu ever being touched.
+`https://lindsaypino.github.io/cv/` redirects there too, via `index.html`.
+
+Pages is what makes it open inline rather than download. The alternatives both
+fall short: `raw.githubusercontent.com` sends `application/octet-stream`, so
+browsers save the file instead of rendering it, and jsDelivr sends the right
+`application/pdf` but with `max-age=604800`, so a visitor's browser would hold a
+stale CV for a week after an update. Pages sends `application/pdf` with a short
+cache.
+
+`.nojekyll` stops Pages running the LaTeX sources through Jekyll. The short CV
+and resume are gitignored; add a negation to `.gitignore` if you want to publish
+those too.
 
 Dated duplicates are deliberately *not* committed — they exist so an emailed PDF
 carries its vintage, and committing them would mean a new file in the repository
 on every build.
 
-Two things worth knowing when committing PDFs:
+Worth knowing when committing PDFs:
 
 - pdfTeX stamps every PDF with a creation timestamp and a random ID, so a rebuild
   produces different bytes even when no source changed. Commit the regenerated
   PDF when you are actually publishing; otherwise check it out again.
-- `raw.githubusercontent.com` serves PDFs as `application/octet-stream`, so the
-  link downloads rather than opening in the browser. Enabling GitHub Pages on this
-  repository would serve `application/pdf` and open it inline instead.
 - Old dated PDFs are not removed automatically. `.\build.ps1 -Clean` clears them
   locally.
 

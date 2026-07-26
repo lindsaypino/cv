@@ -1,15 +1,19 @@
-DOCS = pino_cv pino_cv-short pino_resume
-PDFS = $(addsuffix .pdf,$(DOCS))
+DOCS  = pino_cv pino_cv-short pino_resume
+STAMP = $(shell date +%Y%m%d)
+# Outputs carry the build date: pino_cv_YYYYMMDD.pdf
+PDFS  = $(foreach d,$(DOCS),$(d)_$(STAMP).pdf)
 
 all: $(PDFS)
 
-%.pdf: %.tex cvstyle.sty
+# Build <doc>.pdf from <doc>.tex, then rename to the dated form.
+%_$(STAMP).pdf: %.tex cvstyle.sty
 	pdflatex $*.tex
 	if ( grep -q citation $*.aux ) ; then \
 		bibtex $* ; \
 		pdflatex $*.tex ; \
 	fi
 	pdflatex $*.tex
+	mv $*.pdf $@
 
 clean:
 	rm -f $(addsuffix .aux,$(DOCS)) $(addsuffix .log,$(DOCS)) \
@@ -17,6 +21,6 @@ clean:
 		$(addsuffix .blg,$(DOCS))
 
 distclean: clean
-	rm -f $(PDFS)
+	rm -f $(addsuffix .pdf,$(DOCS)) $(foreach d,$(DOCS),$(d)_*.pdf)
 
 .PHONY: all clean distclean

@@ -25,12 +25,19 @@ Set-Location -LiteralPath $PSScriptRoot
 $docs = @('pino_cv', 'pino_cv-short', 'pino_resume')
 $auxExt = @('aux', 'log', 'out', 'bbl', 'blg', 'toc', 'fls', 'fdb_latexmk')
 
+# Build date, stamped into each output filename (pino_cv_YYYYMMDD.pdf) so a PDF
+# carries its own vintage once it has been emailed or uploaded somewhere.
+$stamp = Get-Date -Format 'yyyyMMdd'
+
 if ($Clean) {
     foreach ($d in $docs) {
         foreach ($e in $auxExt + @('pdf')) {
             $p = "$d.$e"
             if (Test-Path $p) { Remove-Item $p -Force; "removed $p" }
         }
+        # Dated outputs from this and any earlier build.
+        Get-ChildItem -File -Filter "${d}_*.pdf" -ErrorAction SilentlyContinue |
+            ForEach-Object { Remove-Item $_.FullName -Force; "removed $($_.Name)" }
     }
     return
 }
@@ -63,7 +70,12 @@ foreach ($d in $docs) {
         $warn = Select-String -Path "$d.log" -Pattern 'Overfull|Underfull|LaTeX Warning' -ErrorAction SilentlyContinue |
             Where-Object { $_.Line -notmatch 'Font shape|\(Font\)' }
         $suffix = if ($warn) { "$($warn.Count) warning(s)" } else { 'clean' }
-        "built $d.pdf - $suffix"
+
+        # pdflatex names its output after the .tex file; rename to the dated form.
+        $dated = "${d}_$stamp.pdf"
+        if (Test-Path $dated) { Remove-Item $dated -Force }
+        Move-Item -LiteralPath "$d.pdf" -Destination $dated
+        "built $dated - $suffix"
     }
 }
 

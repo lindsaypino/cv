@@ -101,6 +101,18 @@
 \definecolor{cvgray}{HTML}{404040}
 \color{cvgray}
 
+% Publication tallies shown under the Peer-Reviewed Publications heading.
+% Defined once here so the three documents cannot drift apart -- update these two
+% numbers when a paper lands and every document picks it up.
+%
+% Usage: \pubcount              -> (20 total, 8 first author)
+%        \pubcount[; selection below]
+\newcommand{\pubtotal}{20}
+\newcommand{\pubfirstauthor}{8}
+\newcommand{\pubcount}[1][]{%
+  {\small (\pubtotal{} total, \pubfirstauthor{} first author#1)}%
+}
+
 % Name and contact block that opens each document.
 \newcommand{\cvheader}{%
   \thispagestyle{plain}%

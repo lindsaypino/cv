@@ -20,11 +20,11 @@
 # *.ps
 # *.eps
 
-# Build outputs stay untracked, with one exception: the full CV is published so
-# it can be linked to directly. Regenerate everything with build.ps1.
+# Build outputs stay untracked, with one exception: dated builds of the full CV
+# are committed as the published record (pino_cv_YYYYMMDD.pdf).
 # To publish the short CV or resume too, add a matching negation below.
 *.pdf
-!pino_cv.pdf
+!pino_cv_*.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf

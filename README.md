@@ -69,6 +69,30 @@ Two things worth knowing when committing PDFs:
 - Old dated PDFs are not removed automatically. `.\build.ps1 -Clean` clears them
   locally; `git rm` the ones you no longer want published.
 
+## Auditing the publication list
+
+`audit_pubs.py` compares the DOIs in `pino_cv.tex` against the publication record
+built by [MyPublications](https://github.com/lindsaypino/MyPublications), which
+fetches from OpenAlex by ORCID and curates out junk types and duplicate
+preprints. It reports what is in the record but missing from the CV (and the
+reverse), and checks `\pubtotal`/`\pubfirstauthor` against what is actually
+listed.
+
+```powershell
+python audit_pubs.py
+```
+
+It writes nothing — the `.tex` files stay authoritative, since deciding a paper's
+section, author-list formatting, and whether an editorial counts are judgement
+calls no API can make. Deliberate omissions live in the `EXCLUDE` dict at the top
+of the script, each with its reason, so settled decisions are not re-reported.
+Exit status is 1 when something needs a decision.
+
+For fresher data, re-run `fetch_papers.py` in MyPublications first. Note the
+audit only sees works whose metadata carries the ORCID, so a clean run means
+"nothing new in the ORCID record" rather than "provably complete" — the script's
+docstring documents a real example it misses, and PubMed is a useful cross-check.
+
 ## Credit
 
 Originally adapted from [Will Fondrie's CV template](https://github.com/wfondrie/cv).

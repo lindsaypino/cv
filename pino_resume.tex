@@ -1,88 +1,15 @@
 \documentclass[11pt]{article}
-\usepackage{xcolor}
-\usepackage[english]{babel}
-\usepackage{fancyhdr}
-%\usepackage{tabularx}
-%\usepackage{tablestyles}
-\usepackage[hidelinks=true]{hyperref}
+\usepackage{cvstyle}
+\renewcommand{\cvdoctitle}{Resume}
 
-% Reverse Numbering
-\usepackage{etaremune}
-
-% Set 1-inch margins.
-\usepackage[margin=1in]{geometry}
-
-% Headers and Footer
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\textrm{\textbf{Lindsay K.\ Pino}}}
-\lhead{\textrm{\textbf{Curriculum Vitae}}}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-
-\fancypagestyle{plain}{
-  \fancyhf{}
-  \rfoot{\thepage}
-  \renewcommand{\headrulewidth}{0pt}
-}
-
-% Use Roboto font
-\usepackage[rm]{roboto}
-\usepackage[T1]{fontenc}
-\renewcommand{\familydefault}{\sfdefault}
-
-% Skip a line between paragraphs.
-\setlength{\parskip}{1.5ex}
-
-% Turn off indenting.
-\setlength{\parindent}{0in}
-
-% Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
-    \hrulefill}}
-\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
-
-% Set the numbering style.
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-
-% Make the \footnote command print symbols (*, etc).
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-
-% Smarter version of href.
-\newcommand{\myref}[1]{\href{#1}{\url{#1}}}
-
-% Table sizes
-\newlength{\leftcol}
-\setlength{\leftcol}{0.6in}
-\newlength{\rightcol}
-\setlength{\rightcol}{5.25in minus \leftcol}
-\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
-\renewcommand{\arraystretch}{1.25} % make rows taller
-
-% No hyphenation
-\pretolerance=10000
-\raggedright
-
-% colors
-\definecolor{gray}{HTML}{404040}
-\color{gray}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\thispagestyle{plain}
-\begin{center}
-  {\bf \Large \textrm{Lindsay K Pino, PhD}}
-  
-  lindsay.pino@gmail.com \\
-  % {phone #}\\
-  \href{https://lindsaykpino.com/}{lindsaykpino.com}\\
-  Updated \today.
-\end{center}
+\cvheader
+
 
 
 \mysection{Employment and Professional Appointments}
 
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
   2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
              \newline Advisor: Benjamin A Garcia, PhD\\
@@ -90,14 +17,14 @@
              Seattle
              \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
   2011--14 & {\bf Research Associate I}, Broad Institute of MIT and Harvard
-             \newline 2012-14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
-             \newline 2011-12 Genomics Platform: Kristin Ardlie, PhD\\
- % 2006-09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
+             \newline 2012--14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
+             \newline 2011--12 Genomics Platform: Kristin Ardlie, PhD\\
+ % 2006--09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
              %\newline Advisors: Emine Koc, PhD and Melissa Rolls, PhD\\
 \end{tabular}
 
 \mysection{Education}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   % 9/2014--09/2019
   2014--19 & {\bf PhD in Genome Sciences}
              \newline University of Washington, Seattle
@@ -105,7 +32,7 @@
 \end{tabular}
 
 \mysection{Awards and Honors}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2025     & {\bf Life Science Entrepreneurial Achievement Award}, Life Science Washington Institute  (LSWI) \\
   2024     & {\bf Rising Star Award}, Human Proteome Organization (HUPO) \\
   2021     & {\bf Rising Stars in Proteomics and Metabolomics: 40 under 40}, Journal of Proteome Research (JPR) \\
@@ -176,9 +103,9 @@
 \mysection{Professional Service}
 
 \mysubsection{Editorial Boards}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2021--23 & \textit{Journal of Proteome Research}. Editorial Advisory Board. \\
-  2021 & \textit{Molecular Omics}. Guest editor, special issue titled "Cross-talk and Integrative Post-translational Modifications". \\
+  2021 & \textit{Molecular Omics}. Guest editor, special issue titled ``Cross-talk and Integrative Post-translational Modifications''. \\
 \end{tabular}
 
 {\bf Journal Referee: }{Nature Communications, Molecular \& Cellular Proteomics, Journal of Proteome Research, Analytical Chemistry, Scientific Reports, Proteomics, Frontiers in Molecular Neuroscience, Journal of the American Society for Mass Spectrometry, Clinical Proteomics}\\ 

@@ -1,100 +1,26 @@
 \documentclass[11pt]{article}
-\usepackage{xcolor}
-\usepackage[english]{babel}
-\usepackage{fancyhdr}
-%\usepackage{tabularx}
-%\usepackage{tablestyles}
-\usepackage[hidelinks=true]{hyperref}
+\usepackage{cvstyle}
 
-% Reverse Numbering
-\usepackage{etaremune}
-
-% Set 1-inch margins.
-\usepackage[margin=1in]{geometry}
-
-% Headers and Footer
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\textrm{\textbf{Lindsay K.\ Pino}}}
-\lhead{\textrm{\textbf{Curriculum Vitae}}}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-
-\fancypagestyle{plain}{
-  \fancyhf{}
-  \rfoot{\thepage}
-  \renewcommand{\headrulewidth}{0pt}
-}
-
-% Use Roboto font
-\usepackage[rm]{roboto}
-\usepackage[T1]{fontenc}
-\renewcommand{\familydefault}{\sfdefault}
-
-% Skip a line between paragraphs.
-\setlength{\parskip}{1.5ex}
-
-% Turn off indenting.
-\setlength{\parindent}{0in}
-
-% Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
-    \hrulefill}}
-\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
-
-% Set the numbering style.
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-
-% Make the \footnote command print symbols (*, etc).
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-
-% Smarter version of href.
-\newcommand{\myref}[1]{\href{#1}{\url{#1}}}
-
-% Table sizes
-\newlength{\leftcol}
-\setlength{\leftcol}{0.6in}
-\newlength{\rightcol}
-\setlength{\rightcol}{5.25in minus \leftcol}
-\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
-\renewcommand{\arraystretch}{1.25} % make rows taller
-
-% No hyphenation
-\pretolerance=10000
-\raggedright
-
-% colors
-\definecolor{gray}{HTML}{404040}
-\color{gray}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\thispagestyle{plain}
-\begin{center}
-  {\bf \Large \textrm{Lindsay K Pino, PhD}}
-  
-  lindsay.pino@gmail.com \\
-  % {phone #}\\
-  \href{https://lindsaykpino.com/}{lindsaykpino.com}\\
-  Updated \today.
-\end{center}
+\cvheader
+
 
 
 \mysection{Education}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   % 9/2014--09/2019
   2014--19 & {\bf PhD in Genome Sciences}
              \newline University of Washington, Seattle
              \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
   % 9/2005--05/2009
-  2005-09 & {\bf BS in Biochemistry and Molecular Biology}
+  2005--09 & {\bf BS in Biochemistry and Molecular Biology}
              \newline Pennsylvania State University
              \newline Minor: Microbiology\\
 \end{tabular}
 
 \mysection{Employment and Professional Appointments}
 
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
   2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
              \newline Advisor: Benjamin A Garcia, PhD\\
@@ -102,20 +28,20 @@
              Seattle
              \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
   2011--14 & {\bf Research Associate I}, Broad Institute of MIT and Harvard
-             \newline 2012-14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
-             \newline 2011-12 Genomics Platform: Kristin Ardlie, PhD\\
- % 2006-09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
+             \newline 2012--14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
+             \newline 2011--12 Genomics Platform: Kristin Ardlie, PhD\\
+ % 2006--09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
              %\newline Advisors: Emine Koc, PhD and Melissa Rolls, PhD\\
 \end{tabular}
 
 \mysection{Awards and Honors}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2025     & {\bf Life Science Entrepreneurial Achievement Award}, Life Science Washington Institute  (LSWI) \\
   2024     & {\bf Rising Star Award}, Human Proteome Organization (HUPO) \\
   2021     & {\bf Rising Stars in Proteomics and Metabolomics: 40 under 40}, Journal of Proteome Research (JPR) \\
   2021     & {\bf Rising Stars in Analytical Chemistry}, Analytical Chemistry Diversity Colloquium \\
   2020     & {\bf Postdoctoral Career Development Award},  American Society for Mass Spectrometry\\ 
-  2020-21   & {\bf NIH NCI T32 Training Program in Immunobiology of Normal and Neoplastic Lymphocytes}, 
+  2020--21   & {\bf NIH NCI T32 Training Program in Immunobiology of Normal and Neoplastic Lymphocytes}, 
             \newline NIH T32CA009140, Postdoctoral Trainee\\
   2017     & {\bf Graduate Research Award}, American Society for Mass Spectrometry\\
   2016--19 & {\bf Ruth L Kirschstein Individual National Research Service Award}
@@ -126,31 +52,31 @@
   2014--16 & {\bf NIH NHGRI T32 Interdisciplinary Training in Genome Sciences}
              \newline NIH T32HG000035, Predoctoral Trainee\\
  % 2011     & {\bf US Student Fulbright Critical Language Enhancement Award}, South Korea\\
-  2009-11  & {\bf US Fulbright Scholarship}, South Korea\\ 
+  2009--11  & {\bf US Fulbright Scholarship}, South Korea\\ 
 \end{tabular}
 
 \mysection{Research Support}
-\begin{tabular}{\tdim}
-  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
-  (Pino/Federation), Role: Principle Investigator}
-             \newline \textit{\$298,973}. Awarded for “Discovery of targeted small 
-             molecule MYCN therapeutics for neuroblastoma" \\
-  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+\begin{tabular}{V}
+  2023--25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+  (Pino/Federation), Role: Principal Investigator}
+             \newline \textit{\$298,973}. Awarded for ``Discovery of targeted small 
+             molecule MYCN therapeutics for neuroblastoma'' \\
+  2023--25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
   (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$1,995,337}. Awarded for “Therapeutic disruption of the 
-             Rhabdomyosarcoma transcriptional core regulatory circuit" \\
-  2023-25 & {NIH/NCI, 4R44CA268146-02 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$1,000,000/year}. Awarded for “Simultaneous pharmacological 
-             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase II)" \\
-  2022-23 & {NIH/NCI, 1R42CA268146-01 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$455,000}. Awarded for “Simultaneous pharmacological 
-             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase I)" \\
-  2022-23 & {NIH/NCATS, 1R43TR004221-01 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$333,867}. Awarded for “Illuminating the "dark" kinases - effects 
-             on proteome translocation and chromatin binding" \\
-  2021-22 & {NSF, 2112191 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$255,831}. Awarded for “SBIR Phase I: Simultaneous In situ 
-             Pharmacological Profiling of Gene Regulatory Proteins (GRPs) for Cancer Therapy" \\
+             \newline \textit{\$1,995,337}. Awarded for ``Therapeutic disruption of the 
+             Rhabdomyosarcoma transcriptional core regulatory circuit'' \\
+  2023--25 & {NIH/NCI, 4R44CA268146-02 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$1,000,000/year}. Awarded for ``Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase II)'' \\
+  2022--23 & {NIH/NCI, 1R42CA268146-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$455,000}. Awarded for ``Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase I)'' \\
+  2022--23 & {NIH/NCATS, 1R43TR004221-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$333,867}. Awarded for ``Illuminating the `dark' kinases -- effects 
+             on proteome translocation and chromatin binding'' \\
+  2021--22 & {NSF, 2112191 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$255,831}. Awarded for ``SBIR Phase I: Simultaneous In situ 
+             Pharmacological Profiling of Gene Regulatory Proteins (GRPs) for Cancer Therapy'' \\
 
 
 \end{tabular}
@@ -336,14 +262,9 @@
 
 %\newpage
 
-%\mysection{Selected Posters}
+\mysection{Selected Posters}
 \begin{etaremune}
 
-  %\item {\bf Fondrie, WE}, Noble WS. Mokapot: Fast and Flexible Semi-Supervised
-  %  Learning for Peptide Detection. 28th Conference on Intelligent Systems For
-  %  Molecular Biology, July 13--16, 2020. Montreal, QC, Canada. \textit{Moved
-  %    online due to COVID-19.}
-      
     \item \textbf{Pino LK}, Searle BC, Hoofnagle AN, Noble WS, MacCoss MJ. Development and validation of a multiplex quantitative protein assay for human cerebrospinal fluid. \textit{ASMS Annual Conference}, Jun 2018, San Diego, CA.
     
     \item \textbf{Pino LK}, Kaeberlein M, Hoofnagle AN, Noble WS, MacCoss MJ. Lessons learned in high-dimensional analysis of quantitative DIA-MS proteome profiling. \textit{Cascadia Proteomics Symposium}, Aug 2017, Seattle, WA.
@@ -359,7 +280,7 @@
   \end{etaremune}
 
 %\mysection{Mentoring}
-%\begin{tabular}{\tdim}
+%\begin{tabular}{V}
 %  \raggedright
 %  2020     & {\bf Adetola Alonge}, undergraduate, University of Florida
 %            \newline Project: Metaanalysis of Patient Cerebrospinal Fluid by Mass Spectrometry Proteomics Discovers Known and Novel Biomarkers of Parkinson's Disease
@@ -381,7 +302,7 @@
 \mysection{Entrepreneurship}
 
 \mysubsection{Accelerator Programs}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2025 & \textit{Founder To Leader}. Femme Fellowship. \\
   2022 & \textit{Creative Destruction Laboratories (CDL)}. Computational Health (Seattle) graduate. \\
   2022 & \textit{Project W}. Women Entrepreneurs Boot Camp. \\
@@ -393,33 +314,33 @@
 \mysection{Professional Service}
 
 \mysubsection{Editorial Boards}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2021--23 & \textit{Journal of Proteome Research}. Editorial Advisory Board. \\
   2021 & \textit{Molecular Omics}. Guest editor, special issue covering the 2021 Annual US HUPO Conference. \\
-  2021 & \textit{Molecular Omics}. Guest editor, special issue titled "Cross-talk and Integrative Post-translational Modifications". \\
+  2021 & \textit{Molecular Omics}. Guest editor, special issue titled ``Cross-talk and Integrative Post-translational Modifications''. \\
 \end{tabular}
 
 {\bf Journal Referee: }{Nature Communications, Molecular \& Cellular Proteomics, Journal of Proteome Research, Analytical Chemistry, Scientific Reports, Proteomics, Frontiers in Molecular Neuroscience, Journal of the American Society for Mass Spectrometry, Clinical Proteomics}\\ 
 
 \mysubsection{Committee and Research Group Membership}
-\begin{tabular}{\tdim}
-  2023-24 & Member-at-Large, US Human Proteome Organization (US HUPO). \textit{Board of Directors}. \\
-  2021-24 & Proteomics Standards Research Group (sPRG), Association of Biomolecular Resources Facilities (ABRF). \textit{Committee member}. \\
+\begin{tabular}{V}
+  2023--24 & Member-at-Large, US Human Proteome Organization (US HUPO). \textit{Board of Directors}. \\
+  2021--24 & Proteomics Standards Research Group (sPRG), Association of Biomolecular Resources Facilities (ABRF). \textit{Committee member}. \\
   2021-- & Intelligent Systems for Molecular Biology Conference (ISMB), Mass Spectrometry and Proteomics Track. \textit{Co-coordinator}. \\
 % Description(s) of tasks/responsibilities
         %\item {Organize and facilitate interest group meetings and workshops during the annual conference.}
-  2020-22 & Early Career Research Group, US Human Proteome Organization (US HUPO). \textit{Committee member}. \\
+  2020--22 & Early Career Research Group, US Human Proteome Organization (US HUPO). \textit{Committee member}. \\
 % Description(s) of tasks/responsibilities
         %\item {Contribute to organizing committee for 2021 US HUPO conference.}
-  2020-23 & Data Independent Acquisition Interest Group, American Society for Mass Spectrometry (ASMS). \textit{Co-coordinator}. \\
-  2019-21 & Digital Communications Committee, American Society for Mass Spectrometry (ASMS). \textit{Committee member}. \\
+  2020--23 & Data Independent Acquisition Interest Group, American Society for Mass Spectrometry (ASMS). \textit{Co-coordinator}. \\
+  2019--21 & Digital Communications Committee, American Society for Mass Spectrometry (ASMS). \textit{Committee member}. \\
 % Description(s) of tasks/responsibilities
         %\item {Advise, review, and test the web site and custom software developed to enhance the management of ASMS membership, conference registration, abstracts, and program.}
 \end{tabular}
 
 \mysubsection{Professional Memberships}
-\begin{tabular}{\tdim}
-  2021-24     & Association of Biomolecular Resources Facilities (ABRF) \\
+\begin{tabular}{V}
+  2021--24     & Association of Biomolecular Resources Facilities (ABRF) \\
   2020--     & International Society for Computational Biology (ISCB) \\
   2020--     & Human Proteome Organization (HUPO) \\
   2020--     & United States Human Proteome Organization (US HUPO) \\
@@ -431,7 +352,7 @@
 \mysection{Teaching}
 
 \mysubsection{Teaching Assistance}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
     2018 & Introduction to Statistical and Computational Genomics (graduate)
          \newline University of Washington, Seattle \\
     2017 & Fundamentals of Genetics and Genomics (undergraduate)
@@ -444,7 +365,7 @@
 \textit{2-5 day workshops held for academic and industry scientists of all backgrounds covering topics including introductory proteomics and mass spectrometry, LC-MS method development, LC-MS data quality control, analysis of quantitative proteomics data} 
 \newline \\
 
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2024 & Ubuntu Proteomics Summer School
     \newline Cradle of Humankind, South Africa \\
   2023--25 & Proteomics (label-free quantification section)
@@ -456,7 +377,7 @@
   2019 &  Quantitative Targeted Proteomics and Metabolomics Course
       \newline University of Cape Town, Cape Town, South Africa \\
   2017--25 & Computation and statistics for mass spectrometry and proteomics
-    \newline Northeastern University, Boston; 2020-21 virtual \\
+    \newline Northeastern University, Boston; 2020--21 virtual \\
   2017--19 & Bay-area Targeted Proteomics Course
     \newline Buck Institute for Research on Aging, Novato \\
   2016--25 & Quantitative Targeted Mass Spectrometry Course
@@ -478,16 +399,16 @@
 \mysection{Audio/Video Features}
 \begin{etaremune}
 
-  \item {\bf} Life Science Washington Institute WIN Mentoring Program (2024) \\ \myref{https://vimeo.com/873842986?fl=pl&fe=sh} 
+  \item Life Science Washington Institute WIN Mentoring Program (2024) \\ \myref{https://vimeo.com/873842986?fl=pl&fe=sh} 
 
-  \item {\bf} Genetic Engineering \& Biotechnology News (GEN) LIVE: Is Proteomics the Next Big "Ome"? (2024) \\ \myref{https://www.genengnews.com/multimedia/is-proteomics-the-next-big-ome/} 
+  \item Genetic Engineering \& Biotechnology News (GEN) LIVE: Is Proteomics the Next Big ``Ome''? (2024) \\ \myref{https://www.genengnews.com/multimedia/is-proteomics-the-next-big-ome/} 
 
-  \item {\bf} S02E12: THE proteomics BATTLE ROYALE. (2023) The Proteomics Show podcast and US HUPO. \\ \myref{https://open.spotify.com/episode/1rGJGYeTIdqQlCKBqPoUKA?si=0d6eb195498b4f03} \\
+  \item S02E12: THE proteomics BATTLE ROYALE. (2023) The Proteomics Show podcast and US HUPO. \\ \myref{https://open.spotify.com/episode/1rGJGYeTIdqQlCKBqPoUKA?si=0d6eb195498b4f03} \\
   \myref{https://www.youtube.com/watch?v=OybDot4U7uc}
   
-  \item {\bf} Talk is Biotech! with Lindsay Pino. (2022) \\ \myref{https://www.scispot.com/blog/talk-is-biotech-with-lindsay-pino}
+  \item Talk is Biotech! with Lindsay Pino. (2022) \\ \myref{https://www.scispot.com/blog/talk-is-biotech-with-lindsay-pino}
 
-  \item {\bf} Holiday Special - Dr. Lindsay Pino. (2022) The Proteomics Show podcast \\ \myref{https://open.spotify.com/episode/73MEMk6hMGCgfpjIQVqRwh?si=3wni6oXnTAST7zlE-XWV1g}
+  \item Holiday Special - Dr. Lindsay Pino. (2022) The Proteomics Show podcast \\ \myref{https://open.spotify.com/episode/73MEMk6hMGCgfpjIQVqRwh?si=3wni6oXnTAST7zlE-XWV1g}
   
   \item Proteomics calibration with Lindsay Pino. (2021) The Bioinformatics Chat podcast.  \\
     \myref{https://bioinformatics.chat/proteomics-calibration} 

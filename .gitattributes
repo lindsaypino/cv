@@ -1,0 +1,7 @@
+# Keep line endings stable across Overleaf (Linux) and local Windows checkouts.
+* text=auto eol=lf
+
+# Recipe lines in a makefile must not carry a trailing CR.
+makefile text eol=lf
+
+*.pdf binary

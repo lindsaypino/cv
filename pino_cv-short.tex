@@ -1,101 +1,26 @@
 \documentclass[11pt]{article}
-\documentclass[11pt]{article}
-\usepackage{xcolor}
-\usepackage[english]{babel}
-\usepackage{fancyhdr}
-%\usepackage{tabularx}
-%\usepackage{tablestyles}
-\usepackage[hidelinks=true]{hyperref}
+\usepackage{cvstyle}
 
-% Reverse Numbering
-\usepackage{etaremune}
-
-% Set 1-inch margins.
-\usepackage[margin=1in]{geometry}
-
-% Headers and Footer
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\textrm{\textbf{Lindsay K.\ Pino}}}
-\lhead{\textrm{\textbf{Curriculum Vitae}}}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-
-\fancypagestyle{plain}{
-  \fancyhf{}
-  \rfoot{\thepage}
-  \renewcommand{\headrulewidth}{0pt}
-}
-
-% Use Roboto font
-\usepackage[rm]{roboto}
-\usepackage[T1]{fontenc}
-\renewcommand{\familydefault}{\sfdefault}
-
-% Skip a line between paragraphs.
-\setlength{\parskip}{1.5ex}
-
-% Turn off indenting.
-\setlength{\parindent}{0in}
-
-% Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex {\bf \large \textrm{#1}} \quad
-    \hrulefill}}
-\newcommand{\mysubsection}[1]{\vspace{1ex {\bf \textrm{#1}}}}
-
-% Set the numbering style.
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-
-% Make the \footnote command print symbols (*, etc).
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-
-% Smarter version of href.
-\newcommand{\myref}[1]{\href{#1}{\url{#1}}}
-
-% Table sizes
-\newlength{\leftcol}
-\setlength{\leftcol}{0.6in}
-\newlength{\rightcol}
-\setlength{\rightcol}{5.25in minus \leftcol}
-\newcommand{\tdim}{p{\leftcol}p{\rightcol}}
-\renewcommand{\arraystretch}{1.25} % make rows taller
-
-% No hyphenation
-\pretolerance=10000
-\raggedright
-
-% colors
-\definecolor{gray}{HTML}{404040}
-\color{gray}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\thispagestyle{plain}
-\begin{center}
-  {\bf \Large \textrm{Lindsay K Pino, PhD}}
-  
-  lindsay.pino@gmail.com \\
-  % {phone #}\\
-  \href{https://lindsaykpino.com/}{lindsaykpino.com}\\
-  Updated \today.
-\end{center}
+\cvheader
+
 
 
 \mysection{Education}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   % 9/2014--09/2019
   2014--19 & {\bf PhD in Genome Sciences}
              \newline University of Washington, Seattle
              \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
   % 9/2005--05/2009
-  2005-09 & {\bf BS in Biochemistry and Molecular Biology}
+  2005--09 & {\bf BS in Biochemistry and Molecular Biology}
              \newline Pennsylvania State University
              \newline Minor: Microbiology\\
 \end{tabular}
 
 \mysection{Employment and Professional Appointments}
 
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
   2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
              \newline Advisor: Benjamin A Garcia, PhD\\
@@ -103,20 +28,20 @@
              Seattle
              \newline Advisors: Michael J MacCoss, PhD and William S Noble, PhD\\
   2011--14 & {\bf Research Associate I}, Broad Institute of MIT and Harvard
-             \newline 2012-14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
-             \newline 2011-12 Genomics Platform: Kristin Ardlie, PhD\\
- % 2006-09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
+             \newline 2012--14 Proteomics Platform: Steven A Carr, PhD and Susan Abbatiello, PhD
+             \newline 2011--12 Genomics Platform: Kristin Ardlie, PhD\\
+ % 2006--09 & {\bf Undergraduate Research Assistant}, Pennsylvania State University\\
              %\newline Advisors: Emine Koc, PhD and Melissa Rolls, PhD\\
 \end{tabular}
 
 \mysection{Awards and Honors}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2025     & {\bf Life Science Entrepreneurial Achievement Award}, Life Science Washington Institute  (LSWI) \\
   2024     & {\bf Rising Star Award}, Human Proteome Organization (HUPO) \\
   2021     & {\bf Rising Stars in Proteomics and Metabolomics: 40 under 40}, Journal of Proteome Research (JPR) \\
   2021     & {\bf Rising Stars in Analytical Chemistry}, Analytical Chemistry Diversity Colloquium \\
   2020     & {\bf Postdoctoral Career Development Award},  American Society for Mass Spectrometry\\ 
-  2020-21   & {\bf NIH NCI T32 Training Program in Immunobiology of Normal and Neoplastic Lymphocytes}, 
+  2020--21   & {\bf NIH NCI T32 Training Program in Immunobiology of Normal and Neoplastic Lymphocytes}, 
             \newline NIH T32CA009140, Postdoctoral Trainee\\
   2017     & {\bf Graduate Research Award}, American Society for Mass Spectrometry\\
   2016--19 & {\bf Ruth L Kirschstein Individual National Research Service Award}
@@ -127,31 +52,31 @@
   2014--16 & {\bf NIH NHGRI T32 Interdisciplinary Training in Genome Sciences}
              \newline NIH T32HG000035, Predoctoral Trainee\\
  % 2011     & {\bf US Student Fulbright Critical Language Enhancement Award}, South Korea\\
-  2009-11  & {\bf US Fulbright Scholarship}, South Korea\\ 
+  2009--11  & {\bf US Fulbright Scholarship}, South Korea\\ 
 \end{tabular}
 
 \mysection{Research Support}
-\begin{tabular}{\tdim}
-  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
-  (Pino/Federation), Role: Principle Investigator}
-             \newline \textit{\$298,973}. Awarded for “Discovery of targeted small 
-             molecule MYCN therapeutics for neuroblastoma" \\
-  2023-25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+\begin{tabular}{V}
+  2023--25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
+  (Pino/Federation), Role: Principal Investigator}
+             \newline \textit{\$298,973}. Awarded for ``Discovery of targeted small 
+             molecule MYCN therapeutics for neuroblastoma'' \\
+  2023--25 & {Andy Hill CARE Fund, Life Science Start-Up and Development Cycle 1 
   (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$1,995,337}. Awarded for “Therapeutic disruption of the 
-             Rhabdomyosarcoma transcriptional core regulatory circuit" \\
-  2023-25 & {NIH/NCI, 4R44CA268146-02 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$1,000,000/year}. Awarded for “Simultaneous pharmacological 
-             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase II)" \\
-  2022-23 & {NIH/NCI, 1R42CA268146-01 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$455,000}. Awarded for “Simultaneous pharmacological 
-             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase I)" \\
-  2022-23 & {NIH/NCATS, 1R43TR004221-01 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$333,867}. Awarded for “Illuminating the "dark" kinases - effects 
-             on proteome translocation and chromatin binding" \\
-  2021-22 & {NSF, 2112191 (Federation/Pino), Role: Co-Investigator}
-             \newline \textit{\$255,831}. Awarded for “SBIR Phase I: Simultaneous In situ 
-             Pharmacological Profiling of Gene Regulatory Proteins (GRPs) for Cancer Therapy" \\
+             \newline \textit{\$1,995,337}. Awarded for ``Therapeutic disruption of the 
+             Rhabdomyosarcoma transcriptional core regulatory circuit'' \\
+  2023--25 & {NIH/NCI, 4R44CA268146-02 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$1,000,000/year}. Awarded for ``Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase II)'' \\
+  2022--23 & {NIH/NCI, 1R42CA268146-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$455,000}. Awarded for ``Simultaneous pharmacological 
+             profiling of oncogenic gene fusion proteins in cancer (FastTrack Phase I)'' \\
+  2022--23 & {NIH/NCATS, 1R43TR004221-01 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$333,867}. Awarded for ``Illuminating the `dark' kinases -- effects 
+             on proteome translocation and chromatin binding'' \\
+  2021--22 & {NSF, 2112191 (Federation/Pino), Role: Co-Investigator}
+             \newline \textit{\$255,831}. Awarded for ``SBIR Phase I: Simultaneous In situ 
+             Pharmacological Profiling of Gene Regulatory Proteins (GRPs) for Cancer Therapy'' \\
 
 
 \end{tabular}
@@ -259,7 +184,7 @@
 %\newpage
 
 %\mysection{Mentoring}
-%\begin{tabular}{\tdim}
+%\begin{tabular}{V}
 %  \raggedright
 %  2020     & {\bf Adetola Alonge}, undergraduate, University of Florida
 %            \newline Project: Metaanalysis of Patient Cerebrospinal Fluid by Mass Spectrometry Proteomics Discovers Known and Novel Biomarkers of Parkinson's Disease
@@ -281,7 +206,7 @@
 \mysection{Entrepreneurship}
 
 \mysubsection{Accelerator Programs}
-\begin{tabular}{\tdim}
+\begin{tabular}{V}
   2025 & \textit{Founder To Leader}. Femme Fellowship. \\
   2022 & \textit{Creative Destruction Laboratories (CDL)}. Computational Health (Seattle) graduate. \\
   2022 & \textit{Project W}. Women Entrepreneurs Boot Camp. \\

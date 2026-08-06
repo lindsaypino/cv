@@ -247,8 +247,3 @@ TSWLatexianTemp*
 # generated if using elsarticle.cls
 *.spl
 
-# Working notes for the CV rewrite. Deliberately untracked: this repo is public
-# and serves the CV via Pages, and these hold rough recall prompts, unverified
-# leads, and open judgement calls that do not belong next to the published CV.
-TODO.md
-RECALL.md

@@ -21,6 +21,25 @@ changes belong there, not in the individual documents.
 The running header reads "Curriculum Vitae" by default; `pino_resume.tex`
 overrides it with `\renewcommand{\cvdoctitle}{Resume}`.
 
+## The complete record vs. the printed CV
+
+`pino_cv.tex` is the *complete* record — every talk, poster, award, workshop, and
+appointment, whether or not it earns page space. Entries that are real but not
+worth printing are wrapped in `\hide{...}` rather than deleted or commented out,
+so nothing is ever lost and the decision stays visible and reversible.
+
+`cvstyle.sty` carries the switch:
+
+| Flag | Result |
+| --- | --- |
+| `\showalltrue` | Complete version — nothing is suppressed |
+| `\showallfalse` | Curated version — `\hide{...}` entries vanish |
+
+Hidden text is gobbled before typesetting, so it never reaches the PDF. `\hide`
+works inside `tabular` rows and `etaremune` items; wrap a whole subsection
+(heading included) when hiding every row would otherwise leave a heading above
+an empty table.
+
 Publication tallies live in `cvstyle.sty` too, as `\pubtotal` and
 `\pubfirstauthor`, rendered by `\pubcount`. Update those two numbers when a paper
 lands and all three documents follow; nothing else needs touching.

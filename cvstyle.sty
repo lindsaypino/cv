@@ -113,6 +113,27 @@
   {\small (\pubtotal{} total, \pubfirstauthor{} first author#1)}%
 }
 
+% Hiding entries without deleting them.
+%
+% pino_cv.tex is the complete record -- every talk, poster, award, and workshop
+% ever, whether or not it is worth printing. Entries that are real but not worth
+% the page space are wrapped in \hide{...} rather than commented out, so the
+% record stays intact and machine-readable while the rendered CV stays tight.
+%
+%   \showalltrue   -> complete version: nothing is suppressed
+%   \showallfalse  -> curated version: \hide{...} entries vanish
+%
+% Hidden text is gobbled before typesetting, so it never reaches the PDF.
+%
+% The \expandafter dance resolves the conditional *before* the entry's tokens
+% appear. A plain \ifshowall#1\fi would leave \fi stranded after the \\ that
+% ends a table row, which breaks the alignment.
+\newif\ifshowall
+\showalltrue
+\makeatletter
+\newcommand{\hide}{\ifshowall\expandafter\@firstofone\else\expandafter\@gobble\fi}
+\makeatother
+
 % Name and contact block that opens each document.
 \newcommand{\cvheader}{%
   \thispagestyle{plain}%

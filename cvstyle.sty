@@ -7,6 +7,15 @@
 \RequirePackage{xcolor}
 \RequirePackage[english]{babel}
 \RequirePackage{array}
+% longtable, not tabular, for the two-column date/description lists. A tabular is
+% a single unbreakable box, so a long one that does not fit in the space left on
+% a page jumps to the next one wholesale and strands its heading above a mostly
+% blank page. longtable breaks between rows instead.
+\RequirePackage{longtable}
+% longtable adds \bigskipamount above and below itself. \parskip already spaces
+% these lists, so zero it out and keep the spacing tabular used to give.
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
 \RequirePackage{fancyhdr}
 % `hidelinks` takes no value; writing `hidelinks=true` made hyperref reject the
 % option outright, so links were drawn with visible borders.
@@ -56,9 +65,15 @@
 \setlength{\parindent}{0in}
 
 % Define the section command.
-\newcommand{\mysection}[1]{\vspace{1ex {\bf \large #1} \quad
+%
+% \needspace reserves a few lines below the heading. Without it a heading that
+% lands near the foot of a page is left stranded there while its list starts on
+% the next page. The reserve is deliberately small -- just enough to guarantee
+% the heading is followed by real content.
+\RequirePackage{needspace}
+\newcommand{\mysection}[1]{\needspace{6\baselineskip}\vspace{1ex {\bf \large #1} \quad
     \hrulefill}}
-\newcommand{\mysubsection}[1]{\vspace{1ex {\bf #1}}}
+\newcommand{\mysubsection}[1]{\needspace{5\baselineskip}\vspace{1ex {\bf #1}}}
 
 % Set the numbering style.
 \renewcommand{\labelenumi}{(\arabic{enumi})}
@@ -129,7 +144,7 @@
 % appear. A plain \ifshowall#1\fi would leave \fi stranded after the \\ that
 % ends a table row, which breaks the alignment.
 \newif\ifshowall
-\showalltrue
+\showallfalse
 \makeatletter
 \newcommand{\hide}{\ifshowall\expandafter\@firstofone\else\expandafter\@gobble\fi}
 \makeatother

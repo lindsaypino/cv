@@ -18,6 +18,17 @@ layout, fonts, colors, the `\mysection`/`\mysubsection` headings, the `V`
 two-column table format, and the `\cvheader` name-and-contact block. Style
 changes belong there, not in the individual documents.
 
+Two details in there keep the page breaks honest, and both are easy to undo by
+accident:
+
+- The date/description lists are `longtable`, not `tabular`. A `tabular` is one
+  unbreakable box, so a list too tall for the space left on a page jumps to the
+  next page whole and strands its heading over a mostly blank one. `\LTpre` and
+  `\LTpost` are zeroed because `\parskip` already spaces these lists.
+- The headings call `\needspace`, so a heading near the foot of a page pulls
+  itself to the next page rather than sitting alone. The reserve is deliberately
+  small — raising it too far trades stranded headings for half-empty pages.
+
 The running header reads "Curriculum Vitae" by default; `pino_resume.tex`
 overrides it with `\renewcommand{\cvdoctitle}{Resume}`.
 

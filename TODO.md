@@ -3,7 +3,16 @@
 Working list for turning `pino_cv.tex` into the complete record. Delete items as
 they land. See README for the `\hide{}` / `\showall` convention.
 
-## 1. Talks in the CV that need real titles
+## 1. ~~Talks that need real titles~~ — DONE
+
+All resolved. Titles came from the slide-deck archive; the Hollomon "keynote"
+turned out to be five minutes of closing remarks with no slides, so it moved to
+Panels, Moderation, and Judging as "Judge and closing remarks" rather than being
+listed as a lecture. No `% TITLE?` placeholders remain.
+
+<details><summary>Original list</summary>
+
+### Talks in the CV that need real titles
 
 Seven of the eight placeholders are resolved, recovered from the slide-deck
 archive in Google Drive (`presentations/`, root plus the year subfolders). The
@@ -34,10 +43,11 @@ placeholder, since "Invited talk." reads worse than no entry at all.
 - [x] Feb 2026 — Sciex Lunch Seminar, US HUPO 2026 → *Chromatogram-based
       chemoproteomics with ZenoTOF 8600 and Skyline*
 
-Caveat on the LSINW and ACS pair: they now carry the *same* title, because the
-LSINW deck is a copy of the ACS deck whose title slide was never updated (it
-still reads "ACS 2026 Division of Medicinal Chemistry, 2026 March 24"). Accurate
-to the deck, but two identical titles a month apart may want differentiating.
+~~Caveat on the LSINW and ACS pair: they now carry the *same* title~~ — resolved.
+The LSINW deck was a copy of the ACS deck whose title slide was never updated, so
+the extracted title was wrong. The real one is *Unlocking the regulo.me for drug
+discovery with Strategian, a functional proteomics recommender system*. The two
+entries are now distinct.
 
 Two of the new 2026 talks already have titles and need nothing: the ASMS selected
 oral (DNA damage / DNA repair-directed therapeutics) and the ASMS Sciex breakfast
@@ -47,10 +57,12 @@ The Aug 2026 Protein Society (Thailand) talk has also been added, title as
 supplied — that deck and the Stanford one are both 82 MB and return no
 extractable text through Drive, so neither title was read off a slide.
 
+</details>
+
 ## 2. Missing venues
 
-- [ ] Stanford PUG (May 2026) — currently says Stanford, CA. In person or virtual?
-      Deck is unreadable, so this stays open.
+- [x] Stanford PUG (May 2026) — confirmed in person, on the Stanford University
+      campus. Entry now reads "Stanford University, Stanford, CA".
 - [x] SCIEX Discovery Continuum (Apr 2026) — Seattle, WA, inferred from the deck
       filename `20260402_sciex_pharma-seattle.pptx`. Worth confirming it was not
       a webinar.

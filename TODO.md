@@ -126,15 +126,68 @@ roadshow as Sep 2024 San Francisco and Nov 2024 San Diego.
 - [ ] **Posters** — all six are currently `\hide{}`-wrapped. Also decide about the
       ASMS 2025 posters MP224/225 (Canzani and Robbins presenting) — were you a
       co-author?
-- [ ] **Research Support** — the newest entry ends in 2025. You posted about
-      submitting an MNP grant in Sep 2025; add it if it was funded, and check for
-      anything else since.
+- [x] **Research Support** — done. Every application with Pino as PI or Co-I is
+      now listed, with the unfunded ones `\hide{}`-wrapped: six awarded, eleven
+      hidden. The NIH rows were pulled from the eRA Commons Status module rather
+      than from the Drive summary, which had two of them wrong (`R43AG084786` was
+      administratively withdrawn, not "scored 46"), and missed the NHGRI
+      resubmission chain and four pre-Talus fellowship applications entirely.
+      The Sep 2025 MNP grant is *not* here on purpose — the NIEHS microplastics
+      application lists Pino in personnel at zero effort with Federation as PI, so
+      by the same rule that keeps Deep Learning and SEPL out, it does not belong.
+      Two loose ends: `1R43HG014987-01` is the only row with no dollar figure
+      (eCommons Status does not expose requested budgets, and the Drive summary
+      never had one), and the Co-I grants cannot be checked against eCommons at
+      all, since the Status module only shows applications where you are PD/PI.
 - [ ] **Teaching** — was there a Skyline Online 2026? The entry currently reads
       `2020--25`.
 - [ ] **Publications** — run `python audit_pubs.py` against the ORCID record once
       the rest settles.
 
-## 5. Filling the pre-2026 record
+## 5. Record types the CV does not capture at all
+
+Everything above is a gap *inside* a section. These are categories with no home
+in `pino_cv.tex` — `grep` finds nothing for most of them. Ordered by what is
+worth closing first. All of these can land `\hide{}`-wrapped; the point is that
+the record exists somewhere, not that it prints.
+
+- [ ] **Patents and IP.** No section, and no mention of a patent, provisional, or
+      application anywhere in the file. For a co-founder and CTO this is the one
+      credential a publication list cannot stand in for, and it is what a term
+      sheet or licensing conversation asks for first. Each entry wants title,
+      application or publication number, filing date, status, inventors, and
+      assignee. Talus counsel or the IP docket is the source, not memory.
+- [ ] **Grant and study-section review.** Eight NIH applications as PI and
+      nothing recording service on the review side — SBIR study sections, Andy
+      Hill CARE Fund panels, NSF panels, foundation review. Distinct from journal
+      refereeing, and the version of peer review that reads as senior.
+- [ ] **Dates and counts on the journal refereeing.** The `Journal Referee` line
+      under Professional Service is nine journal names with no years and no
+      volumes. `RECALL.md` already flags the list as unversioned. The ORCID peer
+      review record can date most of these without relying on memory.
+- [ ] **Software, datasets, and accessions.** Nothing points at a repository, a
+      PRIDE or MassIVE accession, or a released tool, even though several of the
+      papers *are* software papers — nf-encyclopedia, coADAPTr, the Skyline
+      ecosystem work. For a computational proteomics CV that output is the work
+      product, and right now it is visible only as a citation.
+- [ ] **Affiliations that are not employment.** Adjunct, visiting, and honorary
+      positions; SAB seats; unpaid advisory roles. Worth capturing specifically
+      because NIH retired the Biosketch and Other Support format pages on
+      **May 8, 2026** (NOT-OD-26-079, read off the eRA Commons banner in Aug
+      2026) in favor of the Common Forms, now in force. Those want *all*
+      appointments, foreign and unpaid included, plus in-kind support — a wider
+      net than Employment and Professional Appointments currently casts.
+- [ ] **Print press.** `Audio/Video Features` is AV only, so GeekWire, Endpoints,
+      Timmerman, and Life Science WA coverage has nowhere to go.
+- [ ] **Trainee outcomes.** `Mentoring` lists five names but not where any of
+      them landed, which is the part that carries weight in a nomination packet.
+- [ ] **Company financing milestones.** `Entrepreneurship > Accelerator Programs`
+      carries YC but no rounds. Seed and Series A are CTO credentials.
+
+Deliberately not on this list: talks declined, and any expansion of
+`Conference Attendance` — it is already `\hide{}`-wrapped and low signal.
+
+## 6. Filling the pre-2026 record
 
 See `RECALL.md`. It walks year by year, listing what the CV already pins down so
 memory has something to hang on, and asks a fixed set of questions of each year.
@@ -146,7 +199,7 @@ Worth checking alongside memory, since they are cheap:
 - [ ] Old slide decks — filenames and title slides date themselves
 - [ ] Conference programs, if any are still online
 
-## 6. Last step
+## 7. Last step
 
 Once the record is complete, flip `\showalltrue` to `\showallfalse` in
 `cvstyle.sty`, do a pass over what should be `\hide{}`-wrapped, rebuild, and

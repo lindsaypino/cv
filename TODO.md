@@ -151,12 +151,24 @@ in `pino_cv.tex` — `grep` finds nothing for most of them. Ordered by what is
 worth closing first. All of these can land `\hide{}`-wrapped; the point is that
 the record exists somewhere, not that it prints.
 
-- [ ] **Patents and IP.** No section, and no mention of a patent, provisional, or
-      application anywhere in the file. For a co-founder and CTO this is the one
-      credential a publication list cannot stand in for, and it is what a term
-      sheet or licensing conversation asks for first. Each entry wants title,
-      application or publication number, filing date, status, inventors, and
-      assignee. Talus counsel or the IP docket is the source, not memory.
+- [x] **Patents and IP** — done. A `Patents` section now sits between Additional
+      Publications and Invited Research Lectures, `\hide{}`-wrapped whole so the
+      curated build does not print an empty heading. Three families, all assigned
+      to Talus Bioscience, all with Pino as an inventor: the May 2022
+      reactive-cysteine method (WO 2023/225568, US 2025/0306032, plus EP, AU and
+      CA national phase), and two filed the same day in Feb 2023 —
+      lectin-assisted nuclei isolation (WO 2024/163960, EP 4658665) and
+      volatile-salt extraction of chromatin-bound proteins (WO 2024/163959,
+      US 2026/0226097). Each row carries title, inventors, assignee, application
+      and publication numbers, priority date, and status.
+      The set came from the Google Patents inventor index, cross-checked entry by
+      entry against Espacenet — *not* from counsel or the IP docket. Three
+      caveats follow. Nothing is granted, so every row reads `Pending`. The
+      lectin family shows no US publication, which may mean the US case has not
+      laid open rather than that it does not exist. And an unpublished filing — a
+      live provisional, or a national phase still inside the 18-month window — is
+      invisible to both indexes. Worth one pass against the docket to confirm the
+      set is complete.
 - [ ] **Grant and study-section review.** Eight NIH applications as PI and
       nothing recording service on the review side — SBIR study sections, Andy
       Hill CARE Fund panels, NSF panels, foundation review. Distinct from journal

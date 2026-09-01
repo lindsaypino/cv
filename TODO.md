@@ -216,3 +216,36 @@ Worth checking alongside memory, since they are cheap:
 Once the record is complete, flip `\showalltrue` to `\showallfalse` in
 `cvstyle.sty`, do a pass over what should be `\hide{}`-wrapped, rebuild, and
 commit `pino_cv.pdf`.
+
+## Research ops sweep, 2026-08-31
+
+Recorded by the weekly sweep. One blocked check, and a partial result that stands
+in for it until the blocker clears.
+
+- [ ] **The ORCID publications audit cannot run on the Windows machine — its input
+      repo is not cloned here.** `audit_pubs.py` is present in this repo, but
+      `/d/MyPublications` does not exist, and neither `papers.json` nor
+      `fetch_papers.py` is anywhere on `D:`. So the item under section 4,
+      "run `python audit_pubs.py` against the ORCID record", is blocked on this
+      machine rather than merely pending. Next command:
+
+      ```
+      gh repo clone lindsaypino/MyPublications D:/MyPublications
+      cd /d/MyPublications && python -X utf8 fetch_papers.py
+      cd /d/cv && python audit_pubs.py ../MyPublications/papers.json
+      ```
+
+      Confirm the repo name before cloning; the sweep verified only that no local
+      copy exists, not what the remote is called.
+
+- [x] **PubMed cross-check run instead, and it found no drift.** 23 records match
+      `Pino LK[Author]`. Every one indexed since 2024 is already in `pino_cv.tex`.
+      The only DOI absent is `10.1101/2024.11.07.622473`, the bioRxiv preprint of
+      the *Cell* paper `10.1016/j.cell.2025.05.023` already listed at line 134 —
+      correctly dropped by the rule that removes preprints a published version
+      supersedes.
+
+      This is **not** a substitute for the ORCID audit. PubMed indexes only
+      biomedical literature, so anything outside that scope is invisible to it,
+      and the ORCID record catches works PubMed never sees. Treat the CV's
+      publication list as verified against PubMed only, until the audit above runs.

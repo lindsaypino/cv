@@ -37,9 +37,9 @@ placeholder, since "Invited talk." reads worse than no entry at all.
       in chemoproteomics drug discovery applications*
 - [x] Mar 2026 — ACS Division of Medicinal Chemistry → *Unlocking the regulo.me
       for drug discovery using a high-throughput proteomics platform*
-- [ ] **Mar 2026 — 2026 Hollomon Health Innovation Challenge keynote.** Still
-      open. No deck for this anywhere in the archive, so it has to come from
-      memory, the event page, or your calendar.
+- [x] **Mar 2026 — 2026 Hollomon Health Innovation Challenge keynote.** Done
+      (`43d870d`): closing remarks, not a lecture; now under Panels as "Judge and
+      closing remarks".
 - [x] Feb 2026 — Sciex Lunch Seminar, US HUPO 2026 → *Chromatogram-based
       chemoproteomics with ZenoTOF 8600 and Skyline*
 
@@ -141,8 +141,9 @@ roadshow as Sep 2024 San Francisco and Nov 2024 San Diego.
       all, since the Status module only shows applications where you are PD/PI.
 - [ ] **Teaching** — was there a Skyline Online 2026? The entry currently reads
       `2020--25`.
-- [ ] **Publications** — run `python audit_pubs.py` against the ORCID record once
-      the rest settles.
+- [x] **Publications** — run `python audit_pubs.py` against the ORCID record once
+      the rest settles. Done 2026-10-05 (`233eb52`): audit exits 0 against the
+      OpenAlex refresh of the same day.
 
 ## 5. Record types the CV does not capture at all
 

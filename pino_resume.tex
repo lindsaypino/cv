@@ -10,7 +10,19 @@
 \mysection{Employment and Professional Appointments}
 
 \begin{tabular}{V}
-  2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.\\
+  2020--     & {\bf Co-founder, Chief Technology Officer}, Talus Bioscience, Inc.
+             % A plain list, not itemize: itemize resets the spacing when it opens,
+             % but the list's second argument runs after that reset and so wins.
+             \begin{list}{\textbullet}{\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}%
+               \setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}%
+               \setlength{\leftmargin}{1em}\setlength{\labelwidth}{0.6em}\setlength{\labelsep}{0.4em}}
+               \item Lead scientific execution at a 16-person transcription factor (TF) drug discovery company. Manage 4 direct reports on the platform team, mostly wet-lab, which owns its experimental data analysis, and partner with the ML team on atlas-scale computation.
+               \item Scaled a multi-vendor LC-MS proteomics platform (Bruker timsTOF Ultra II, Thermo Orbitrap Exploris 480, SCIEX ZenoTOF 8600) from $\sim$96 to 2,100 samples/week, with $\sim$1-week cells-to-data turnaround.
+               \item Set company-level technical KPIs and OKRs with the CEO, and run quarterly scientific reviews. Measured the $\sim$4-week question-to-data cycle end to end and identified upstream compound logistics as the main constraint.
+               \item Halted a planned investment in plate-based sample-prep automation after a cost/ROI analysis, and redirected automation scoping to cell culture.
+               \item Deliver platform data that supports every pipeline program: Brachyury (chordoma), NONO/AR, STAT6, and undisclosed targets.
+               \item Co-led proposals that secured >\$5M in peer-reviewed, non-dilutive funding.
+             \end{list}\\
   2019--21   & {\bf Postdoctoral Researcher}, University of Pennsylvania
              \newline Advisor: Benjamin A Garcia, PhD\\
   2014--19 & {\bf Graduate Research Assistant}, University of Washington,

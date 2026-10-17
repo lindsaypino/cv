@@ -79,7 +79,7 @@ which probably involved you speaking:
 
 ## 2024 — 9 talks
 
-**Anchors:** Jan UC Berkeley (Bruker eXceed) · Jan BCPM Simon Fraser · Mar Ohio
+**Anchors:** Jan UC Berkeley (Bruker eXceed) · Feb BCPM Simon Fraser · Mar Ohio
 State virtual · Mar US HUPO Portland TF session · Mar US HUPO Bruker lunch · Apr
 ABRF Minneapolis · Jun ASMS Anaheim ×2 · Oct HUPO Dresden · **HUPO Rising Star
 Award** · Ubuntu Proteomics Summer School · GEN LIVE · LSWI WIN video.

@@ -89,12 +89,42 @@ and two are `\hide{}`-wrapped as non-lectures.
       Troubleshooting". Separately you ran an **Evening Workshop**, *The Business
       of Starting a Lab Business* — added but `\hide{}`-wrapped, since it may sit
       better under Teaching.
-- [ ] May/Jun 2025 — **ASMS 2025**. Still open. The only ASMS 2025 deck in the
-      archive is an unfinished calibration-curves *poster* (`20250603_asms_calcurves`,
-      full of CARTOON/TODO placeholders), not a talk. If you gave an oral, its
-      deck is not in the folder.
-- [ ] Jun 2025 — **Entrepreneurship in Mass Spectrometry workshop, ASMS 2025**.
-      Still open; no deck found. Belongs in Teaching or Professional Service.
+- [x] May/Jun 2025 — **ASMS 2025**. Answered: a **poster**, not an oral, which
+      matches the only ASMS 2025 deck in the archive (`20250603_asms_calcurves`,
+      an unfinished calibration-curves poster). Nothing to add to the lectures.
+      Posters stay `\hide{}`-wrapped, so nothing prints either.
+- [x] Jun 2025 — **Entrepreneurship in Mass Spectrometry workshop, ASMS 2025**.
+      Answered, and then widened considerably by a Drive sweep of
+      `workshop_entrepreneurship/`. This is not one workshop but a **four-run
+      series** co-chaired with **Paula Burton** (co-founder/CEO, Mass Dynamics),
+      and only one run was anywhere in the CV. All four are now in Teaching under
+      Entrepreneurship and Science Communication Workshops:
+
+      | Run | Where | Title |
+      | --- | --- | --- |
+      | Jun 2025 | ASMS, Baltimore | Non-traditional Ways to Progress Your Science |
+      | Nov 2025 | HUPO, Toronto | *not recovered* |
+      | Jun 1 2026 | ASMS, San Diego | Navigating the Commercial Realities of MS/Proteomics Startups |
+      | Oct 2026 | HUPO, Singapore | Entrepreneurship in Proteomics: Scaling Science into Sustainable Companies |
+
+      Each run is its own row rather than a year range, since the titles and the
+      host societies differ. Three things to check:
+
+      1. ~~Role wording.~~ Settled 2026-10-16: the workshops and the ASMS DIA
+         Interest Group are **Co-coordinator**; *Co-chair* is reserved for the
+         ISMB CompMS COSI. The four rows were changed to match, so the ASMS 2026
+         invitation letter's "Co-chaired by Lindsay Pino ... and Paula Burton"
+         is not the wording the CV follows here.
+      2. **The Toronto title.** No proposal doc for that run is in the folder.
+         The row carries the series name as a stand-in. The sign-up form
+         (`Entrepreneurship in MS and Proteomics (Responses)`) is what proves the
+         run happened at all, by offering "HUPO (Toronto, 2025)" as an option.
+      3. **The Singapore month.** Taken from the blog post's creation date
+         (2026-10-07) plus "day zero of HUPO in Singapore", not from a program.
+
+      Counting note, in case a fifth run turns up: the ASMS 2026 logistics email
+      calls that run "our third time", and the Singapore post calls itself "the
+      fourth time". Both are consistent with exactly these four.
 - [x] Jul 2025 — **Cascadia Proteomics Symposium**, Seattle. Answered: **Andrea
       Gutierrez** presented (*High-Throughput Quantification of Chromatin-Associated
       Proteins to Advance Neuroblastoma Therapeutic Discovery*), not you. Nothing
@@ -103,14 +133,25 @@ and two are `\hide{}`-wrapped as non-lectures.
       *Proteomics for Chromatin-Bound Protein Drug Discovery That Doesn't Fall
       Apart at Scale*. The title slide carries only the date, so the event name
       comes from the filename.
-- [ ] Sep 5 2025 — **An unnamed panel**, early Pacific hours so likely
-      European-hosted or virtual. Still open; no deck.
-- [ ] Oct 2025 — **Forbeck Forum**, Lake Geneva, WI. Deck found
-      (`20251006_forbeck`) but it is three content slides with no title slide, and
-      the venue is only confirmed via the Q4 platform deck's trip report. Needs a
-      title before it can be listed.
-- [ ] Nov 2025 — **ASMS Fall Workshop, "Fundamentals of Instrumentation"**. Your
-      post reads like attendee rather than instructor — confirm which.
+- [ ] Sep 2025 — **An unnamed panel**, early Pacific hours so likely
+      European-hosted or virtual. Still open; no deck. Checked 2026-10-16: the
+      calendar has nothing on Sep 5. The provenance does not survive in the repo
+      either — both files were gitignored until `e854073`, so there is no history
+      behind them, and `RECALL.md` only ever said "Sep — a panel, early Pacific
+      hours" with no day. The "Sep 5" here is sharper than its own source. Day
+      dropped from the heading above to stop it hardening further. Treat the
+      whole entry as unverified; if nothing turns up, delete it rather than
+      printing it.
+- [x] Oct 2025 — **Forbeck Forum**, Lake Geneva, WI. Answered from the forum
+      *program*, not the deck: *Measuring the Regulome to Translate Chromatin
+      Biology into Cancer Therapeutics*. The program prints the abstract and the
+      Talus Bio CTO/co-founder affiliation, so it confirms this was a titled
+      lecture rather than a discussion slot, and it corroborates the venue that
+      the Q4 platform deck's trip report had been the only source for. Now listed
+      under Invited Research Lectures, unhidden.
+- [x] Nov 2025 — **ASMS Fall Workshop, "Fundamentals of Instrumentation"**.
+      Answered: **instructor**. Added to Teaching under the workshop instructor
+      table. No city on the row yet.
 
 Also added from the archive, not previously on this list: the **Nov 2025 Bruker
 Lunch Seminar at HUPO Toronto** (*From regulome maps to first-in-class targets
@@ -123,9 +164,10 @@ roadshow as Sep 2024 San Francisco and Nov 2024 San Diego.
 - [ ] **Awards** — GeekWire Health Innovation of the Year *finalist* (Mar 2025).
       That is a Talus award rather than a personal one; decide whether it goes
       under Awards, Entrepreneurship, or not at all.
-- [ ] **Posters** — all six are currently `\hide{}`-wrapped. Also decide about the
-      ASMS 2025 posters MP224/225 (Canzani and Robbins presenting) — were you a
-      co-author?
+- [x] **Posters** — decided: they **stay `\hide{}`-wrapped**. The ASMS 2025
+      MP224/225 co-authorship question (Canzani and Robbins presenting) is
+      therefore moot for the printed CV; it would only matter if posters are ever
+      unhidden.
 - [x] **Research Support** — done. Every application with Pino as PI or Co-I is
       now listed, with the unfunded ones `\hide{}`-wrapped: six awarded, eleven
       hidden. The NIH rows were pulled from the eRA Commons Status module rather
@@ -139,8 +181,8 @@ roadshow as Sep 2024 San Francisco and Nov 2024 San Diego.
       (eCommons Status does not expose requested budgets, and the Drive summary
       never had one), and the Co-I grants cannot be checked against eCommons at
       all, since the Status module only shows applications where you are PD/PI.
-- [ ] **Teaching** — was there a Skyline Online 2026? The entry currently reads
-      `2020--25`.
+- [x] **Teaching** — answered: **yes**, Skyline Online runs again the week of
+      2026-10-19. The entry now reads `2020--26`.
 - [x] **Publications** — run `python audit_pubs.py` against the ORCID record once
       the rest settles. Done 2026-10-05 (`233eb52`): audit exits 0 against the
       OpenAlex refresh of the same day.
@@ -174,6 +216,9 @@ the record exists somewhere, not that it prints.
       nothing recording service on the review side — SBIR study sections, Andy
       Hill CARE Fund panels, NSF panels, foundation review. Distinct from journal
       refereeing, and the version of peer review that reads as senior.
+      Partly answered 2026-10-16: it happened **once, around winter 2025--26**.
+      The panel, the sponsor and the exact date still need a Gmail search for the
+      invitation or the reviewer agreement before a row can be written.
 - [ ] **Dates and counts on the journal refereeing.** The `Journal Referee` line
       under Professional Service is nine journal names with no years and no
       volumes. `RECALL.md` already flags the list as unversioned. The ORCID peer
@@ -183,8 +228,10 @@ the record exists somewhere, not that it prints.
       papers *are* software papers — nf-encyclopedia, coADAPTr, the Skyline
       ecosystem work. For a computational proteomics CV that output is the work
       product, and right now it is visible only as a citation.
-- [ ] **Affiliations that are not employment.** Adjunct, visiting, and honorary
-      positions; SAB seats; unpaid advisory roles. Worth capturing specifically
+- [x] **Affiliations that are not employment.** Answered 2026-10-16: **none** —
+      no adjunct, visiting or honorary positions, no SAB seats, no unpaid
+      advisory roles. Nothing to add, so the section stays as it is. Re-check if
+      a Common Forms submission ever needs it, since the net is wide: Worth capturing specifically
       because NIH retired the Biosketch and Other Support format pages on
       **May 8, 2026** (NOT-OD-26-079, read off the eRA Commons banner in Aug
       2026) in favor of the Common Forms, now in force. Those want *all*
@@ -217,3 +264,16 @@ Worth checking alongside memory, since they are cheap:
 Once the record is complete, flip `\showalltrue` to `\showallfalse` in
 `cvstyle.sty`, do a pass over what should be `\hide{}`-wrapped, rebuild, and
 commit `pino_cv.pdf`.
+
+**Blocker, found 2026-10-16.** The build does not run on this machine:
+`cvstyle.sty` line 73 does `\RequirePackage{needspace}` and MiKTeX has no
+`needspace.sty` installed. A plain `pdflatex` or `build.ps1` run does not fail —
+it *hangs*, because MiKTeX stops at an interactive installer prompt that no one
+is there to answer. Install it once and both go back to working:
+
+```powershell
+mpm --install=needspace
+```
+
+Until that runs, every edit since `e950458` is unbuilt, and `pino_cv.pdf` in the
+repo is older than `pino_cv.tex`.

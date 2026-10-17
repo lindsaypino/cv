@@ -161,9 +161,12 @@ roadshow as Sep 2024 San Francisco and Nov 2024 San Diego.
 
 ## 4. Other sections to sweep
 
-- [ ] **Awards** — GeekWire Health Innovation of the Year *finalist* (Mar 2025).
-      That is a Talus award rather than a personal one; decide whether it goes
-      under Awards, Entrepreneurship, or not at all.
+- [x] **Awards** — GeekWire Health Innovation of the Year *finalist* (Mar 2025).
+      Decided 2026-10-17: it goes under **Awards and Honors**, not
+      Entrepreneurship. Because it is a company award rather than a personal
+      one, the row says so outright — `Finalist; awarded to Talus Bio` — so it
+      cannot be misread as an individual honor sitting beside the HUPO Rising
+      Star and LSWI awards.
 - [x] **Posters** — decided: they **stay `\hide{}`-wrapped**. The ASMS 2025
       MP224/225 co-authorship question (Canzani and Robbins presenting) is
       therefore moot for the printed CV; it would only matter if posters are ever
@@ -219,15 +222,81 @@ the record exists somewhere, not that it prints.
       Partly answered 2026-10-16: it happened **once, around winter 2025--26**.
       The panel, the sponsor and the exact date still need a Gmail search for the
       invitation or the reviewer agreement before a row can be written.
-- [ ] **Dates and counts on the journal refereeing.** The `Journal Referee` line
-      under Professional Service is nine journal names with no years and no
-      volumes. `RECALL.md` already flags the list as unversioned. The ORCID peer
-      review record can date most of these without relying on memory.
-- [ ] **Software, datasets, and accessions.** Nothing points at a repository, a
-      PRIDE or MassIVE accession, or a released tool, even though several of the
-      papers *are* software papers — nf-encyclopedia, coADAPTr, the Skyline
-      ecosystem work. For a computational proteomics CV that output is the work
-      product, and right now it is visible only as a citation.
+- [x] **Dates and counts on the journal refereeing.** Done 2026-10-17 from the
+      public ORCID peer-review record (`0000-0003-1857-7222`): **29 reviews,
+      2019--2026**. Kept as prose with spans appended rather than broken into a
+      table, so the line still costs two lines instead of ten.
+
+      | Journal | n | Span |
+      | --- | --- | --- |
+      | Nature Communications | 13 | 2020--26 |
+      | Journal of Proteome Research | 8 | 2020--26 |
+      | Analytical Chemistry | 5 | 2019--24 |
+      | Clinical Proteomics | 1 | 2021 |
+      | J. Am. Soc. Mass Spectrometry | 1 | 2020 |
+      | Scientific Data | 1 | 2022 |
+
+      **Scientific Data** was in the ORCID record but missing from the CV list
+      entirely, and is now added. Four journals keep no span —
+      **Molecular \& Cellular Proteomics, Scientific Reports, Proteomics,
+      Frontiers in Molecular Neuroscience** — because ORCID only holds reviews a
+      publisher deposited, and the only depositors here are ACS and Springer
+      Nature. A LaTeX comment above the line says so, so the gaps are not
+      mistaken for an oversight and "fixed" with invented years. Dating those
+      four needs memory or the journals' own reviewer records; counts are
+      deliberately not printed.
+- [x] **Software, datasets, and accessions.** Closed 2026-10-17: **decided
+      against a section.** Every repository and dataset below is already cited
+      through the paper it belongs to, or will be once that paper lands, so a
+      separate section would restate the publication list rather than add to
+      it. The item's own premise — that this output is "visible only as a
+      citation" — is the answer, not the problem.
+
+      The sweep is kept below as reference. It is the only place this material
+      is collected, and it answers the question quickly if a funder or a
+      nomination packet ever asks for software and data products directly.
+
+      **Repositories, verified on GitHub:**
+
+      | Repo | Stars | Tied to |
+      | --- | --- | --- |
+      | `TalusBio/nf-encyclopedia` | 8 | the 2023 JPR paper |
+      | `TalusBio/timsbuktoolkit` | 6 | authorship unverified |
+      | `LJonesGroup/coADAPTr` | 1 | the 2024 JASMS paper; Jones lab owns it |
+      | `TalusBio/msspeculator` | 1 | authorship unverified |
+      | `lindsaypino/matrix-matched_calcurves` | 3 | the 2020 calibration-curves paper |
+      | `lindsaypino/2024_abrf_sprg` | 2 | ABRF sPRG hybrid proteome standard |
+
+      Also under `lindsaypino`, unstarred and probably not CV material:
+      `randoMS`, `histone_ptms`, `parkinsons_proteomics` (Alonge's intern
+      project), `silac-dia`, `als_ptms`, `MSstats-patch`.
+
+      **Accessions recovered from open-access full texts:**
+
+      | Paper | Accession |
+      | --- | --- |
+      | Chromatogram libraries (2018) | MassIVE `MSV000082805` |
+      | Late-life mitochondrial restoration (2020) | MassIVE `MSV000084961`, `MSV000085329` |
+      | *Dictyostelium* epigenetics (2021) | PRIDE `PXD024225`, GEO `GSE137604` |
+
+      **This list is a floor, not the full set.** Four independent reasons:
+
+      1. ORCID holds **no software or dataset works at all** — 34 articles and
+         one preprint, nothing else. So the upstream record is as thin as the CV,
+         and nothing here can be recovered from ORCID later.
+      2. Europe PMC has **zero cross-references indexed** for any of the 31
+         papers it has, so the usual paper-to-repository link is empty.
+      3. PRIDE's keyword search for "Pino" returns a *different* researcher
+         (Juan Borrero del Pino). None of these datasets were submitted under
+         LKP's name, so submitter search cannot find them.
+      4. Only **7 of 31** papers are open access with a PMCID, so 24 could not
+         be scanned at all. Those need checking by hand.
+
+      **Worth knowing separately:** the 2025 regulome preprint has *no*
+      accession. Its data availability statement reads "Raw mass spectrometry
+      data will be made public in PRIDE upon acceptance", with processed
+      matrices and analysis code "available upon request". So the flagship
+      dataset is not deposited yet, and cannot be cited until it is.
 - [x] **Affiliations that are not employment.** Answered 2026-10-16: **none** —
       no adjunct, visiting or honorary positions, no SAB seats, no unpaid
       advisory roles. Nothing to add, so the section stays as it is. Re-check if
@@ -237,12 +306,111 @@ the record exists somewhere, not that it prints.
       2026) in favor of the Common Forms, now in force. Those want *all*
       appointments, foreign and unpaid included, plus in-kind support — a wider
       net than Employment and Professional Appointments currently casts.
-- [ ] **Print press.** `Audio/Video Features` is AV only, so GeekWire, Endpoints,
-      Timmerman, and Life Science WA coverage has nowhere to go.
-- [ ] **Trainee outcomes.** `Mentoring` lists five names but not where any of
-      them landed, which is the part that carries weight in a nomination packet.
-- [ ] **Company financing milestones.** `Entrepreneurship > Accelerator Programs`
-      carries YC but no rounds. Seed and Series A are CTO credentials.
+- [x] **Print press.** The structural half of this was already solved before
+      the item was written: a `Media Coverage` section exists (`777333b`), so
+      print has had somewhere to go since then. Filled out 2026-10-17 with five
+      more, oldest first:
+
+      | Year | Outlet | Piece |
+      | --- | --- | --- |
+      | 2022 | GeekWire | Inspired by scientist CEOs ... lands $9.75M |
+      | 2023 | GeekWire | Talus Bioscience lands $4.3M in grant funding |
+      | 2023 | PharmaVoice | A biotech tackles drug discovery with transcription factor know-how (*Biotech Spotlight*) |
+      | 2024 | GeekWire | Seattle biotech startup secures $11.2M ... "undruggable" targets |
+      | 2024 | FierceBiotech | Talus Bio tacks on $11M ... |
+
+      **Four of those five are now `\hide{}`-wrapped** (decided 2026-10-17):
+      every one whose headline states a funding figure. Hiding the
+      `Company Financing` block alone did not keep the numbers off the page —
+      the press headlines were still printing $11.2M, $11M, $4.3M and $9.75M on
+      the last page. Only the PharmaVoice *Biotech Spotlight* prints, since it
+      is a feature rather than a raise. Verified against the built PDF: no
+      funding figure appears anywhere in it.
+
+      Each new URL is one long hyphenated run, so each carries the same local
+      `\UrlBreaks` override the Drug Discovery & Development entry already used.
+      Checked once the build was unblocked: all three documents compile with
+      zero overfull boxes, so every line stays inside the margin. The Fierce
+      URL does split after `https:`, which is cosmetic only; `\UrlBigBreaks`
+      does not suppress it.
+
+      Two of the four outlets named in the original item produced nothing:
+
+      - **Endpoints News** — no Talus coverage found at all.
+      - **Timmerman Report** — one piece only, "Seattle's AI-Biotech Leaders See
+        Hype, Hope, and Hard Problems" (Nov 2025), where Talus is one of several
+        companies giving a fast pitch. Too thin to list as coverage; say if you
+        want it anyway.
+      - **Life Science WA** — carries the Fierce story rather than its own
+        reporting, so the Fierce original is listed instead.
+
+      Left out deliberately: GeekWire's 2025 awards listicle ("Health Innovation
+      of the Year field is dominated by finalists battling cancer"). It is
+      neither funding coverage nor a feature, and the award itself is already an
+      Awards row. Add it if you want the finalist claim to carry a citation.
+- [ ] **Trainee outcomes.** `Mentoring` lists five names. Partly answered
+      2026-10-17, and the pass turned up a bigger problem than the missing
+      outcomes: **two rows overstated the role.** Witek and Gilbert carried no
+      qualifier, so they read as primary supervision when the role was
+      collaborator rather than mentor of record. Decided: **both rows are now
+      `\hide{}`-wrapped**, so neither prints. They stay in the file because the
+      collaborations did happen, each tagged `collaborator, not a mentor of
+      record`. Alonge, a real mentorship, keeps her row and now reads
+      `(undergraduate internship mentor)`. Worth re-reading the rest of the CV
+      with the same eye.
+
+      That leaves **three printed rows**: Kohler (thesis committee), Shetty
+      (WE Lead), Alonge (undergraduate internship). Outcomes: Kohler, Witek and
+      Gilbert all defended, marked on their rows. Still open for the printed
+      three — *where each of them landed*, which is the part that carries weight
+      in a nomination packet:
+
+      | Trainee | Prints? | Defended? | Current position |
+      | --- | --- | --- | --- |
+      | Devon Kohler | yes | yes | unknown |
+      | Nina Shetty | yes | n/a (undergrad) | unknown |
+      | Adetola Alonge | yes | n/a (undergrad) | unknown |
+      | Gabriela Witek | no, hidden | yes | unknown |
+      | Michael Gilbert | no, hidden | yes | unknown |
+
+      Gilbert is first author on the 2025 *Cell* ant paper, which would date a
+      position, but a paper affiliation is not a current position and was not
+      used. No defense *years* are printed either — the span end implies them,
+      and inventing exact dates was not worth it.
+- [x] **Company financing milestones.** Done 2026-10-17. The item's own premise
+      was half wrong — **there is no Series A** (confirmed by LKP) — and the
+      first attempt at this entry was wrong in a worse way, so both were
+      rewritten 2026-10-17 after LKP supplied the real round history.
+
+      **The mistake, recorded so it is not repeated.** The first draft treated
+      **$9.75M as a tracker's bad reporting of the 2024 round**. It is not. It
+      is the figure *Talus Bio's own June 2022 release* carried for the 2022
+      seed, and GeekWire ran it the same week. Two separate events, two years
+      apart, were collapsed into one, and a real announcement was dismissed as
+      an outlier. The spread of "totals" in the trackers — $16M, $19.7M, $21.7M,
+      ~$27M — was likewise written off as unusable when those are just different
+      cuts of the same history taken at different dates.
+
+      **What a press figure actually is.** A line of the form "has raised $X in
+      seed funding" is a *running total*, and it can fold in the pre-seed and
+      awarded grants. So the announced number for a round and the size of that
+      round are different quantities, and must not be used interchangeably. The
+      rows now say "as announced" for exactly this reason, and no cumulative
+      total is printed.
+
+      Two rows, both public announcements: the **Jun 2022 seed** ($9.75M as
+      announced; NFX and Y Combinator named) and the **Aug 2024 Seed+** ($11.2M,
+      led by Two Bear Capital with WRF Capital, NFX, YC Continuity Fund,
+      FundersClub and BoxOne Ventures). They sit under Entrepreneurship as a
+      `Company Financing` subsection that is **commented out**, not
+      `\hide{}`-wrapped, so it stays invisible even under `\showalltrue` — the
+      same treatment the CTO role bullets got in `e950458`.
+
+      **Public figures only, deliberately.** This repo is public, so only what
+      the company has itself announced goes in these files. Internal round
+      history was used to check the public numbers and is not written down here.
+      Non-dilutive funding is also left out, since Research Support already
+      itemises the NIH awards and a grant total would double-count them.
 
 Deliberately not on this list: talks declined, and any expansion of
 `Conference Attendance` — it is already `\hide{}`-wrapped and low signal.

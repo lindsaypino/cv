@@ -186,5 +186,9 @@ starts 2016 · Abelin MCP paper · Broad 2011–14 · Fulbright 2009–11.
       2025, and anything else pending or funded.
 - [ ] **Mentoring** — five listed. Talus employees or interns you have formally
       mentored?
-- [ ] **Service** — journal referee list is unversioned; any new journals?
+- [ ] **Service** — the referee list carries ORCID-derived spans as of
+      2026-10-17, but four journals have no ORCID record and so no years:
+      Molecular & Cellular Proteomics, Scientific Reports, Proteomics,
+      Frontiers in Molecular Neuroscience. Roughly when did you review for
+      each? And any journals missing from the list altogether?
 - [ ] **Media** — six items. Any newer podcasts, panels, or press?

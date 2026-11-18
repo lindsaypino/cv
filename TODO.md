@@ -105,7 +105,7 @@ and two are `\hide{}`-wrapped as non-lectures.
       | Jun 2025 | ASMS, Baltimore | Non-traditional Ways to Progress Your Science |
       | Nov 2025 | HUPO, Toronto | *not recovered* |
       | Jun 1 2026 | ASMS, San Diego | Navigating the Commercial Realities of MS/Proteomics Startups |
-      | Oct 2026 | HUPO, Singapore | Entrepreneurship in Proteomics: Scaling Science into Sustainable Companies |
+      | Sep 2026 | HUPO, Singapore | Entrepreneurship in Proteomics: Scaling Science into Sustainable Companies |
 
       Each run is its own row rather than a year range, since the titles and the
       host societies differ. Three things to check:
@@ -119,8 +119,11 @@ and two are `\hide{}`-wrapped as non-lectures.
          The row carries the series name as a stand-in. The sign-up form
          (`Entrepreneurship in MS and Proteomics (Responses)`) is what proves the
          run happened at all, by offering "HUPO (Toronto, 2025)" as an option.
-      3. **The Singapore month.** Taken from the blog post's creation date
-         (2026-10-07) plus "day zero of HUPO in Singapore", not from a program.
+      3. ~~**The Singapore month.**~~ Settled 2026-11-18: **Sep 2026**, not Oct.
+         The earlier "Oct" came from the blog post's creation date
+         (2026-10-07). The website appearances list gives Sep 27, and the
+         calendar has "PW09 · Entrepreneurship in Proteomics", Room 330,
+         Suntec Singapore, on Sep 26.
 
       Counting note, in case a fifth run turns up: the ASMS 2026 logistics email
       calls that run "our third time", and the Singapore post calls itself "the

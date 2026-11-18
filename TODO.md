@@ -432,26 +432,22 @@ Worth checking alongside memory, since they are cheap:
 
 ## 7. Last step
 
-Once the record is complete, flip `\showalltrue` to `\showallfalse` in
-`cvstyle.sty`, do a pass over what should be `\hide{}`-wrapped, rebuild, and
-commit `pino_cv.pdf`.
+- [x] **Switch to the curated build.** `cvstyle.sty` has had `\showallfalse`
+      since `c7a39cf` (2026-08-06). Nothing to flip.
+- [x] **Rebuild and commit `pino_cv.pdf`.** Done 2026-11-18 in #4 (merged as
+      `82e5837`), built from `36ce45d` on LPTHINKPAD: 11 pages, no overfull,
+      underfull or LaTeX warnings. The previous PDF was from `e950458`.
+- [ ] **Review what is `\hide{}`-wrapped.** No record that this pass was done.
+      Once it is, rebuild and commit `pino_cv.pdf` again.
 
-**Blocker, found 2026-10-16.** The build does not run on this machine:
-`cvstyle.sty` line 73 does `\RequirePackage{needspace}` and MiKTeX has no
-`needspace.sty` installed. A plain `pdflatex` or `build.ps1` run does not fail —
-it *hangs*, because MiKTeX stops at an interactive installer prompt that no one
-is there to answer. Install it once and both go back to working:
+**Build note: `needspace` on the other machine.** On 2026-10-16 the build hung
+on one machine: `cvstyle.sty` line 73 does `\RequirePackage{needspace}`, that
+MiKTeX install had no `needspace.sty`, and MiKTeX stopped at an installer
+prompt. If a build hangs, run this once:
 
 ```powershell
 mpm --install=needspace
 ```
 
-Until that runs, every edit since `e950458` is unbuilt, and `pino_cv.pdf` in the
-repo is older than `pino_cv.tex`.
-
-**Update 2026-11-18: not a blocker on LPTHINKPAD.** That machine has MiKTeX
-25.12 as a per-user install (`%LOCALAPPDATA%\Programs\MiKTeX`, on the User PATH),
-and `kpsewhich needspace.sty` finds the package. All three documents built there
-with `texify` at `d5bb065`: exit 0, no overfull, underfull or LaTeX warnings.
-That build was in a scratch copy, so `pino_cv.pdf` in the repo is still stale
-until the step above. The blocker may still apply to the other machine.
+LPTHINKPAD does not have this problem: MiKTeX 25.12 (per-user install, on the
+User PATH) has the package. Not checked on the other machine.

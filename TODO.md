@@ -448,3 +448,10 @@ mpm --install=needspace
 
 Until that runs, every edit since `e950458` is unbuilt, and `pino_cv.pdf` in the
 repo is older than `pino_cv.tex`.
+
+**Update 2026-11-18: not a blocker on LPTHINKPAD.** That machine has MiKTeX
+25.12 as a per-user install (`%LOCALAPPDATA%\Programs\MiKTeX`, on the User PATH),
+and `kpsewhich needspace.sty` finds the package. All three documents built there
+with `texify` at `d5bb065`: exit 0, no overfull, underfull or LaTeX warnings.
+That build was in a scratch copy, so `pino_cv.pdf` in the repo is still stale
+until the step above. The blocker may still apply to the other machine.
